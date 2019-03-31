@@ -1,0 +1,12 @@
+.piePagina{
+  display: grid;
+  grid-template-rows: 15% 85%;
+  &-copyright{
+    // background-color: rgb(37, 167, 207);
+    grid-row: 1;
+  }
+  &-logoFinal{
+    // background-color: rgb(10, 94, 133);
+    grid-row: 2;
+  }
+}

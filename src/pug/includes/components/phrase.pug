@@ -1,0 +1,15 @@
+//- Para los valores del mixin phraseHero se requiere de los siguientes campos: titulo, descripcion y slogan.
+//-TITULO: representa un encabezado de la actividad o el servicio.
+//-DESCRIPCION: se debe escribir una frase llamativa para el sitio aluciendo a los servicios prestados.
+//-SLOGAN: la frase caracteristica de la empresa o de la actividad del sitio.
+//- en caso de no tener SLOGAN dejar los dignos de comilla sencillas ('') solo con el espacio.
+
+mixin phraseHero(titulo, encabezado, slogan)
+  section.hero-phrase
+    h3.hero-phrase_title #{titulo}
+    h3.hero-phrase_description #{encabezado}
+    if (`${slogan}`=='')
+      br
+    else
+      h5.hero-phrase_slogan #{slogan}
+

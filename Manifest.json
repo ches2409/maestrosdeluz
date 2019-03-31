@@ -1,0 +1,12 @@
+{
+  "name": "Progresive Web App CodigoCreativo",
+  "short_name": "WebStudio",
+  "description": "Aplicación Web Progresiva de Codigo creativo",
+  "background_color": "#1a1a1a",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait",
+  "display": "browser",
+  "start_url":"./?utm=homescreen",
+  "scope": "./",
+  "lang": "es-CO"
+}

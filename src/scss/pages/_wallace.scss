@@ -1,0 +1,11 @@
+.wallace{
+  .imgOpc{
+    background-image: imgPath('comunidadWallace.png');
+  }
+  .boxInfo3-texto{
+    &-bLateralIzq,
+    &-bLateralDer{
+      background-color:blue;
+    }
+  }
+}

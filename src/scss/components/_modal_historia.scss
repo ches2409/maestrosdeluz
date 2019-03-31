@@ -1,0 +1,25 @@
+#closehistoria{
+  display: none;
+  + label{
+    position: fixed;
+    top: 5rem;
+    right: 1rem;
+    z-index: 2050;
+    color: $clResalte;
+    // background-color: red;
+    font-size: $t2;
+    cursor: pointer;
+    &:hover{
+      // color: $azulOxford;
+    }
+  }
+  &:checked{
+    display: none;
+    background-color: orange;
+  }
+  &:checked ~ #modal{
+    top: -100vh;
+  }
+
+
+}

@@ -1,0 +1,16 @@
+.hathi{
+  .imgOpc{
+    background-image: imgPath('ManadaHathi.png');
+    // background-position: center center;
+    // background-size: 32%;
+    // background-repeat: no-repeat;
+  }
+  .boxInfo3-texto{
+    &-bLateralIzq,
+    &-bLateralDer{
+      background-color:yellow;
+      border: 1px solid orange;
+    }
+  }
+}
+

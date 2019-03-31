@@ -1,0 +1,10 @@
+// menu lateral de redes sociales
+mixin links(service)
+  nav.links
+    ul.links-list
+      each item in service
+        li.links-item
+          a.links-link(href=`${item[1]}`)= item[0]
+            .imagen
+              img(src=`${item[2]}` alt=item[0] height="40")
+

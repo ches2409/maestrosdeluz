@@ -1,0 +1,76 @@
+// mixin de borde como referencia para maquetar
+@mixin lborde ($size:1px, $color:red) {
+    border: $size solid $color;
+}
+
+//mixin de grid para los elementos padres en la maquetación
+@mixin gridBase ($col:repeat(5, 1fr), $filas:repeat(8, 1fr)) {
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $filas;
+}
+@mixin centerGrid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+@mixin centerFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin gradient ($from, $to){
+  background-image: linear-gradient($from, $to);
+}
+@mixin radialGradient($from, $to) {
+  background-image: radial-gradient(center, ellipse cover, $from 0%, $to 100%);
+  background-color: $from;
+}
+
+
+@mixin radial-gradient($from, $to, $per) {
+	background: -moz-radial-gradient(center, circle cover, $from 0%, $to $per);
+	background: -webkit-gradient(radial, center center, 0px, center center, $per, color-stop(0%, $from), color-stop($per, $to));
+	background: -webkit-radial-gradient(center, circle cover, $from 0%, $to $per);
+	background: -o-radial-gradient(center, circle cover, $from 0%, $to $per);
+	background: -ms-radial-gradient(center, circle cover, $from 0%, $to $per);
+	background: radial-gradient(center, circle cover, $from 0%, $to $per);
+	background-color: $from;
+}
+@mixin mQ($media) {
+  @if $media==xsS {
+    @media screen and (min-width:$xsScreen) {
+      @content;
+    }
+  }
+  @else if $media==smallS {
+    @media screen and (min-width:$smallScreen) {
+      @content;
+    }
+  }
+  @else if $media==mediumS {
+    @media screen and (min-width:$mediumScreen) {
+      @content;
+    }
+  }
+  @else if $media==wideS {
+    @media screen and (min-width:$wideScreen) {
+      @content;
+    }
+  }
+  @else if $media==largeS {
+    @media screen and (min-width:$largeScreen) {
+      @content;
+    }
+  }
+  @else if $media==xlS {
+    @media screen and (min-width:$xlScreen) {
+      @content;
+    }
+  }
+  @else if $media==opS {
+    @media screen and (min-width:$opScreen) {
+      @content;
+    }
+  }
+}

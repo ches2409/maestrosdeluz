@@ -1,0 +1,28 @@
+-imgPath='/public/images/'
+-ancho=220
+-imgItems=8
+-numeracion=1
+
+mixin ligthBox(galeria)
+	ul.lb-album
+		each item in galeria
+			li.lb-list
+				a(href="#image"+(numeracion++))
+					img(src=imgPath+`${item[0]}`, alt=item[1], width=ancho)
+					span #{item[2]}
+				.lb-overlay(id='image'+(numeracion-1))
+					img(src=imgPath+`${item[0]}`, alt=item[1])
+					.lb-overlay__content
+						h3 #{item[2]}
+							span / #{item[2]}
+						p #{item[3]}
+						.lb-bottoms
+							if ((numeracion)==2)
+								a.lb-prev(href="#image"+imgItems) #[i.fa.fa-chevron-circle-left]
+							else
+								a.lb-prev(href="#image"+(numeracion-2)) #[i.fa.fa-chevron-circle-left]
+							if ((numeracion)==(imgItems+1))
+								a.lb-next(href='#image'+(numeracion/numeracion)) #[i.fa.fa-chevron-circle-right]
+							else
+								a.lb-next(href='#image'+(numeracion)) #[i.fa.fa-chevron-circle-right]
+					a.lb-close(href="#Actividades") X CLOSE

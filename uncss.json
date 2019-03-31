@@ -1,0 +1,24 @@
+{
+  "ignore": [
+    // ".fa-youtube-play",
+    // "fa-chevron-circle-left",
+    // "fa-chevron-circle-right",
+    // "fa-facebook-square",
+    // "fa-twitter-square",
+    // "fa-instagram",
+    // "fa-pinterest-square",
+    // "fa-plus-circle",
+    // "fa-close",
+    // "fa-window-close",
+    // ".Header.is-active",
+    // ".Panel.is-active",
+    // ".hamburger--spring.is-active .hamburger-inner",
+    // ".hamburger--spring.is-active .hamburger-inner::before",
+    // ".hamburger--spring.is-active .hamburger-inner::after",
+    // ".GoogleMap",
+    // ".GoogleMap a",
+    // ".GoogleMap a:hover",
+    // ".GoogleMap iframe"
+  ],
+  "ignoreSheets": []
+}

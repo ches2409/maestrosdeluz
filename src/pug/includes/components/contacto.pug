@@ -1,0 +1,14 @@
+mixin contacto(texto, txt, telefono, movil, placeHolder)
+  .heroWrap-infoContacto_contact
+    .title
+      p #{texto}
+    .subtitle
+      p #{txt}
+    .numbers
+      p.numbers-phone1 #{telefono}
+        //- i.icon.fa.fa-envelope
+      p.numbers-phone2 #{movil}
+        i.icon.fa.fa-whatsapp
+    .boton
+      a(href='https://fontawesome.com/cheatsheet' target="blank") #{placeHolder} #[i.icon.fa.fa-envelope]
+

@@ -1,0 +1,36 @@
+body{
+  height: 100vh;
+  background-color: $prueba01;
+}
+.portafolio{
+  &-container{
+    // margin-left: -10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 70%;
+  }
+  &-titulo{
+    background-color: rebeccapurple;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 3rem;
+    color: $clTextoGen;
+    display: flex;
+    flex-wrap: wrap;
+    .logo{
+      margin-right: 5%;
+      margin-left: 2%;
+      width: 15%;
+      background-image: url('./images/logo.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &-book{
+    // background-color: orangered;
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    display: flex;
+    justify-content: center;
+  }
+}

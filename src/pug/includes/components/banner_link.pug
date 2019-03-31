@@ -1,0 +1,15 @@
+mixin bannerLink(titulo1, titulo2, descrip, ref)
+  .bannerLink-container
+    .bannerLink-container__titleBanner
+      h3.titleDark #{titulo1}
+      h3.titleLight #{titulo2}
+    .bannerLink-container__imgBanner
+      .backg1
+      .backg2
+      .backgImg
+        .info
+            h3.text1 Ver
+            p.text2 Más..
+              a(href=ref) . #{titulo2}
+    .bannerLink-container__descripBanner
+      .descripText #{descrip}

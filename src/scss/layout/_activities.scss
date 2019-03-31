@@ -1,0 +1,102 @@
+.activitiesContainer{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, 100vh);
+  &-sectionOne{
+    // background-color: rgb(207, 116, 207);
+    //grid-column: span 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 10% 90%;
+    .slide{
+      // background-color: rgb(225, 118, 252);
+      grid-column: 1 / 2;
+      grid-row: 2;
+      display: grid;
+      grid-template-rows:70% 30%;
+      &-imageContainer{
+        // background-color: red;
+        grid-row: 1;
+      }
+      &-reviewContainer{
+        // background-color: rebeccapurple;
+        grid-row: 2;
+        // display: grid;
+        // grid-template-rows: 30% 70%;
+        // justify-items: center;
+        // &_figure{
+        //   // background-color: steelblue;
+        //   grid-row: 1;
+        // }
+        // &_wrap{
+        //   // background-color: red;
+        //   grid-row: 2;
+        // }
+      }
+    }
+    .activitiesInfo{
+      //background-color: rgb(156, 207, 14);
+      grid-row: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 20% 35% 45%;
+      // align-items: center;
+      justify-items: center;
+      .headerTitle{
+        // background-color: #410341;
+        grid-column: span 2;
+        grid-row: 1;
+      }
+      &-body{
+        // background-color: rgb(107, 70, 70);
+        grid-row: 2;
+        grid-column: span 2;
+      }
+      &-links{
+        // background-color: rgb(172, 12, 158);
+        grid-row: 3;
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+    }
+    .infoContainer-link{
+      // background-color: yellowgreen;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .infoContainer-titles{
+        //background-color: rebeccapurple;
+        height: 2.5rem;
+      }
+      .infoContainer-intro{
+        //background-color: green;
+        height: 8rem;
+        display: flex;
+      }
+    }
+  }
+  &-sectionTwo{
+    // background-color: rgb(151, 16, 16);
+    grid-column: span 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    flex-wrap: wrap;
+
+  }
+  &-infoImagesOne{
+    // background-color: #fff;
+    .infoImages{
+      // background-color: rgb(122, 116, 116);
+    }
+  }
+  &-infoImagesTwo{
+    // background-color: rgb(220, 157, 223);
+  }
+  &-infoImagesThree{
+    // background-color: rgb(100, 71, 71);
+  }
+}

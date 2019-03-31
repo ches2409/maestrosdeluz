@@ -1,0 +1,64 @@
+.social{
+  //background-color: blue;
+  position: fixed;
+  top:35%;
+  right: 0;
+  z-index: 10100;
+  &-list{
+    list-style: none;
+    &__item{
+      // @include centerFlex;
+
+      &:hover{
+        .fa{
+          background-color: $clSecondary;
+          // transform-origin: right;
+          // padding: 1.5rem;
+          border-radius: 50%;
+          box-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
+          transform: translateX(-15px) scale(1.5);
+          will-change: transform;
+        }
+      }
+    }
+    &__link{
+      display: inline-block;
+      @include centerFlex;
+      color: $clTextoGen;
+      font-size: 1.5rem;
+      .fa{
+        // padding: 1.5rem 1rem;
+        width: 2rem;
+        height: 2rem;
+        @include centerFlex;
+        transition: background-color .5s .3s linear,
+                    border-radius .2s ease-in-out,
+                    transform .5s ease-in-out,
+                    padding .4s ease-in-out,
+                    box-shadow .3s linear;
+      }
+      .fa-briefcase{
+        background-color:#6d6d6d;
+        border-radius: 30% 0 0 0;
+      }
+      .fa-facebook-f{
+        background-color:#3b5998;
+        border-radius: 0 0 0 0;
+      }
+      .fa-twitter{
+        background-color:#00abf0;
+      }
+      .fa-instagram{
+        background-color:#cd486b;
+      }
+      .fa-pinterest{
+        background-color:#ae181f;
+        border-radius: 0 0 0 30%;
+      }
+      .fa-linkedin{
+        background-color:#0077b5;
+        border-radius: 0 0 0 0;
+      }
+    }
+  }
+}

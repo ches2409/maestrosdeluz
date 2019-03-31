@@ -1,0 +1,106 @@
+.site-info{
+  // background-color: orangered;
+  &-imagesWrap{
+    // background-color: darkcyan;
+    height: 100%;
+    width: 100%;
+    // overflow: hidden;
+    // background-size: cover;
+    // background-position: center center;
+    .slider{
+
+    }
+    .imgOpc{
+      background-image: imgPath('ManadaHathi.png');
+      background-position: center center;
+      background-size: 32%;
+      background-repeat: no-repeat;
+    }
+  }
+  &-infoWrap{
+    // background-color: darkgoldenrod;
+
+    .headerTitle{
+      // background-color: yellowgreen;
+      width:27rem;
+
+      .title-light{
+        // background-color: red;
+        margin-top: 1.3rem;
+      }
+      .title-dark{
+        margin-top: -.3rem;
+      }
+    }
+    .btnClose{
+      display: flex;
+      align-items: center;
+      a{
+        color: $clAlterno;
+        font-size: $t2;
+        transition: all .3s ease-in-out;
+        &:hover{
+          transform: scale(1.1);
+          color: $clResalte;
+        }
+      }
+
+    }
+    .boxInfo3{
+      // background-color: orangered;
+      margin: 1rem 0 0 0;
+
+      // margin: 0 auto;
+      &-texto{
+        // background-color: #fff;
+        margin: 0 1rem;
+
+        &-bLateralIzq{
+          width:6rem;
+          height:100%;
+          background-color: $clBase;
+          border-radius:1.5rem 0 0 1.5rem;
+        }
+        &-descripcion{
+          text-align: justify;
+          padding: .5rem;
+          @include centerFlex;
+
+        }
+        &-bLateralDer{
+          width:6rem;
+          margin-left: 1rem;
+          height:100%;
+          background-color: $clBase;
+          border-radius:0 1.5rem 1.5rem 0;
+        }
+      }
+      &-empresa{
+        // background-color: paleturquoise;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .texto{
+          color: $clSecondary;
+        }
+        &-texto1{
+            // background-color: orchid;
+            margin-bottom: -1rem;
+        }
+        &-texto2{
+            // margin-top: -1rem;
+        }
+      }
+
+    }
+    .infoGeneral{
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+//- include ./galeria.pug
+
+mixin boxInfoImages(titulo, descrip, resalte, reseña)
+  section.infoImages
+    .infoImages-text
+      .infoImages-text__resalte
+        h3.titleResalte #{resalte}
+      .infoImages-text__review
+        p.titleReview #{reseña}
+    .infoImages-graphics
+      .infoImages-graphics__title
+        h4.titleGraphics #{titulo}
+      .infoImages-graphics__image.galery
+        block
+      .infoImages-graphics__description
+        p.descripGraphics #{descrip}
+
+

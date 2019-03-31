@@ -1,0 +1,35 @@
+.headerTitle{
+  // background-color: orange;
+  display: flex;
+  flex-direction: column;
+  // padding: 0;
+  // line-height: 16px;
+  //justify-content: center;
+  h2{
+    line-height: 16px;
+  }
+  &-title1{
+    // background-color: rgb(221, 29, 29);
+    // display: flex;
+    // justify-content: flex-start;
+    // margin-top: .2rem;
+    margin-left: 2.5rem;
+    z-index: 1000;
+    opacity: 0.95;
+
+
+  }
+  &-title2{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.8rem;
+    // margin-left: -.5rem;
+    z-index: 100;
+  }
+}
+.title-dark{
+  color:$clSecondary;
+}
+.title-light{
+  color: lighten($azulOxford, 25%);
+}

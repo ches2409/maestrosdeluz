@@ -1,0 +1,46 @@
+.heroWrap-infoContacto{
+  // background-color: pink;
+
+  &_contact{
+  // background-color: red;
+  padding: 0.7vw;
+  border: 0.1vw solid $resalte;
+    .title{
+      // background-color: orangered;
+      @include centerFlex();
+    }
+    .subtitle{
+      // background-color: darkcyan;
+      @include centerFlex();
+    }
+    .numbers{
+      .numbers-phone1{
+        // background-color: rosybrown;
+        @include centerFlex();
+        color: $clAlterno;
+        font-size: 1vw;
+        i{
+          margin-left: 0.7vw;
+        }
+      }
+      .numbers-phone2{
+        // background-color: bisque;
+        @include centerFlex();
+        margin: 0.5vw;
+        font-size: 1.5vw;
+
+      }
+    }
+    .boton{
+      // background-color: lawngreen;
+      // color: $resalte;
+      font-size: 2vw;
+      @include centerFlex();
+      a{
+        color: $resalte;
+        list-style: none;
+        text-decoration: none;
+      }
+    }
+  }
+}

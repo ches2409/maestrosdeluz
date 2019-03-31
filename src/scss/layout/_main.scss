@@ -1,0 +1,128 @@
+// .mainContainer{
+//   display: grid;
+//   grid-template-columns: repeat(12, 1fr);
+//   grid-template-rows: 5% 10% 21% 15% 49%;
+//   .headerTitle{
+//     @include lborde($color: rgb(11, 145, 40));
+//     //background-color: rgba(30, 238, 30, 0.95);
+//     grid-row: 2;
+//     grid-column: span 5;
+//   }
+//   &-sectionOne{
+//     @include lborde($color: rgb(124, 158, 31));
+//     //background-color:rgba(124, 158, 31, 0.95);
+//     grid-row: 3;
+//     grid-column: 4 / -1;
+//     // display: grid;
+//     // grid-template-columns:25% 75%;
+//     // grid-template-rows: repeat(2, 1fr);
+//     // .titleContainer{
+//     //   grid-column: 1;
+//     //   grid-row: 1;
+//     // }
+//   }
+//   // &-body{
+//   //   grid-column: 2;
+//   //   grid-row: 1;
+//   //   &_b2{
+//   //     grid-column: 1;
+//   //     grid-row: 1;
+//   //   }
+//   // }
+//   // &-links{
+//   //   grid-column: 1 / -1;
+//   //   grid-row: 2;
+//   //   display: grid;
+//   //   grid-template-columns:repeat(3, 1fr);
+
+//   // }
+
+//   &-sectionTwo{
+//     // @include lborde($color: rgb(145, 136, 11));
+//     //background-color: rgba(145, 136, 1, 0.95);
+//     grid-row: 4;
+//     grid-column: 4 / -1;
+//     // display: grid;
+//     // grid-template-columns: 75% 25%;
+//     // grid-template-rows: 1fr;
+//   //   .titleContainer{
+//   //     // background-color: blue;
+//   //     height: 100%;
+//   //     grid-column: 2 / -1;
+//   //     display: grid;
+//   //     grid-template-columns:70% 30%;
+//   //     justify-items: center;
+//   //     align-items: center;
+//   //     &-fig{
+//   //       // background-color: rgb(92, 12, 12);
+//   //       grid-column: 2 / -1;
+//   //       grid-row: 1;
+//   //     }
+//   //     &-title{
+//   //       //background-color: rgb(245, 97, 97);
+//   //       grid-column: 1 / 2;
+//   //       grid-row: 1;
+//   //     }
+//   //   }
+//   //   .mainContainer-body_b2{
+//   //     // background-color: rgb(245, 97, 97);
+//   //     // margin: 1rem;
+//   //       .mainContainer-text{
+//   //         height: 100%;
+//   //         margin: 1rem;
+//   //         grid-column: 1 / 2;
+//   //         display: grid;
+//   //         grid-template-columns: 1fr 1fr;
+//   //         justify-items: center;
+//   //         align-items: center;
+//   //       }
+//   //   }
+//   }
+
+//   &-sectionThree{
+//     //@include lborde($color: rgb(136, 201, 15));
+//     // background-color: rgba(136, 201, 1, 0.95);
+//     grid-row: 5;
+//     grid-column: 4 / 13;
+//   //   display: grid;
+//   //   // grid-template-columns:25% 75%;
+//   //   grid-template-rows: 30% 70%;
+//   //   .titleContainer{
+//   //     // grid-column: 1;
+//   //     grid-row: 1;
+//   //   }
+//   // }
+//   // &-body{
+//   //   grid-column: 2;
+//   //   grid-row: 1;
+//   //   &_b2{
+//   //     // grid-column: 1;
+//   //     grid-row: 1;
+//   //   }
+
+//   // }
+//   // .boxTitle-title{
+//   //     @include lborde(3px solid red);
+//     }
+//   // &-boxInfo{
+//   //   background-color: rgb(221, 29, 238);
+//   //   // grid-column: span 2;
+//   //   // display: grid;
+//   //   // grid-template-columns: 1fr 1fr;
+//   //   // .wrapOne{
+//   //   //   //background-color: #fff;
+//   //   // }
+//   //   // .wrapTwo{
+//   //   //   //background-color: rgb(56, 9, 9);
+//   //   // }
+//   //   // .boxInfo-container{
+//   //   //   //background-color: rgb(30, 119, 122);
+//   //   //   .boxTitle{
+//   //   //     //background-color: rgb(85, 211, 243);
+//   //   //   }
+//   //   //   .boxBody{
+//   //   //     //background-color: rgb(78, 145, 189);
+//   //   //   }
+//   //   // }
+//   // }
+// }

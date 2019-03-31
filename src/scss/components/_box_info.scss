@@ -1,0 +1,47 @@
+.boxInfo-container{
+  //background-color: #fff;
+  .boxTitle{
+
+    &-title{
+      display: grid;
+      grid-template-columns: 80% 20%;
+      background-color: $clAlterno;
+
+      .boxBcg{
+        grid-column: span 1;
+        .bTitleFondo{
+          color: white;
+          margin-right: -4rem;
+          grid-column: span 1;
+          z-index: 100;
+          font-size: $t1;
+          text-align: right;
+          opacity: 0.4;
+
+        }
+      }
+      .prueba{
+        //background-color: purple;
+        margin-left: 1.4rem;
+        grid-column: 2 / -1;
+        z-index: 200;
+        .bTitle{
+          color: orangered;
+          font-size: $t2;
+          z-index: 200
+        }
+      }
+    }
+  }
+  .boxBody{
+    padding: 1rem 2rem;
+    &-resalte{
+      font-weight: bold;
+      text-align: center;
+    }
+    &-cuerpo{
+      padding-top: 1rem;
+      text-align: justify;
+    }
+  }
+}

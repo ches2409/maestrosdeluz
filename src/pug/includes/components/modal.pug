@@ -1,0 +1,15 @@
+mixin modalBox(titulo, texto, texto2, ref)
+  .lbText(class='lb'+`${ref}`)
+    a.lbText-open(href="#modalDes"+`${ref}`) #[i.fa.fa-plus-circle]
+    .lbText-overlay(id='modalDes'+`${ref}`)
+      .lbText-overlay__content
+        h3(class='lbText-titleIn') #{titulo}
+        .textWrap
+          .parrafo1
+            each item in texto
+              p.lbText-textIn #{item[0]}
+          .parrafo2
+            each item in texto2
+              p.lbText-textIn #{item[0]}
+      .lbText-overlay__bottom
+        a.lbText-btnClose(href='#institucional') #[i.fa.fa-close]

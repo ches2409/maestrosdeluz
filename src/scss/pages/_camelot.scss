@@ -1,0 +1,11 @@
+.camelot{
+  .imgOpc{
+    background-image: imgPath('tropaCamelot.png');
+  }
+  .boxInfo3-texto{
+    &-bLateralIzq,
+    &-bLateralDer{
+      background-color:green;
+    }
+  }
+}

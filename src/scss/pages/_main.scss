@@ -1,0 +1,334 @@
+body{
+  background-color: $prueba01;
+}
+.heroWrap{
+  // background-color: $color;
+
+  &-infoCorp{
+    // background-color: gold;
+
+  }
+  &-infoContacto{
+    // background-color: orange;
+
+  }
+}
+.mainContainer{
+  // background-color: red;
+  &-sectionUs{
+    // background-color: ;
+
+  }
+  &-head{
+    // background-color: blueviolet;
+
+    &__icon{
+      i.fa{
+        margin-top: 5vw;
+        color:$resalte;
+        font-size: 2.5vw;
+      }
+    }
+    &__title{
+      margin-top: 5vw;
+      color:$resalte;
+    }
+  }
+  &-boxA{
+    // background-color: chartreuse;
+    color:$primario;
+    margin: 0 2vw;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    span{
+      color:$clAlterno;
+    }
+
+  }
+  &-contact{
+    // background-color: palevioletred;
+    .box{
+      padding: 0.5vw;
+      border: 0.1vw solid $resalte;
+      &-icon{
+        color:$resalte;
+        font-size: 2.5vw;
+      }
+      &-text{
+        color: $resalte;
+        p{
+          font-size: 1.2vw;
+        }
+
+      }
+    }
+  }
+  &-Service{
+    // background-color: yellowgreen;
+
+    &.sectionOne{
+      background-image: url('/src/images/img01.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      .mainContainer-Service_banner{
+        // background-color: olivedrab;
+
+        &__icon{
+          // background-color: red;
+          margin-left: -2vw;
+          color:$resalte;
+          font-size: 5vw;
+          z-index: 100;
+
+        }
+        &__title{
+          background-color: $resalte;
+          margin-right: 3vw;
+          margin-bottom: 7%;
+          margin-top: 7%;
+          .bannerTitle1{
+            color: $txtResalte;
+          }
+        }
+        &__body{
+          // background-color: antiquewhite;
+          // margin-top: 2vw;
+          h4{
+            color: $resalte;
+            // font-size:2vw;
+          }
+          .textoBody{
+
+            color: $primario;
+          }
+        }
+      }
+    }
+    &.sectionTwo{
+      background-image: url('/src/images/img02.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      // background-attachment: fixed;
+      .mainContainer-Service_banner{
+
+        // background-color: aqua;
+
+        &__icon{
+          // background-color: red;
+          // margin-left: -2vw;
+          color:$resalte;
+          font-size: 5vw;
+          z-index: 100;
+        }
+        &__title{
+          // background-color: rgb(248, 248, 255);
+          background-color: $primario;
+          // margin-right: 3vw;
+          // margin-bottom: 7%;
+          // margin-top: 7%;
+          .bannerTitle2{
+            color: $resalte;
+          }
+        }
+        &__body{
+          // background-color: antiquewhite;
+          .mainContainer-Service_articleBox_ab2{
+            // background-color: maroon;
+
+          }
+          .fraseBody{
+            // background-color: palevioletred;
+            font-size: 4vh;
+            color: aliceblue;
+          }
+          .invitacionBody{
+            // background-color: yellowgreen;
+            color: $clAlterno;
+            font-size: 5vh;
+          }
+          .emphasis{
+            // background-color: pink;
+            color: aliceblue;
+            font-style: italic;
+            font-size: 1.5vh;
+          }
+          .textoBody{
+            // background-color: fuchsia;
+            color: aliceblue;
+
+          }
+
+        }
+      }
+    }
+    &.sectionThree{
+      background-image: url('/src/images/img03.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      // background-attachment: fixed;
+      .mainContainer-Service_banner{
+
+        // background-color: aqua;
+        &__icon{
+          // background-color: red;
+          color:$prueba01;
+          font-size: 5vw;
+          z-index: 100;
+        }
+        &__title{
+          // background-color: blue;
+          color: $baseredes;
+          font-size: 6vw;
+        }
+        &__body{
+          // background-color: antiquewhite;
+          .mainContainer-Service_articleBox_ab3{
+            // background-color: maroon;
+
+          }
+          .fraseBody{
+            // background-color: palevioletred;
+            font-size: 3vh;
+            color: black;
+            span{
+              color:$baseredes;
+              font-size: 3vh
+            }
+          }
+          .invitacionBody{
+            // background-color: yellowgreen;
+            color: $baseredes;
+            font-size: 3vw;
+          }
+
+        }
+      }
+
+    }
+  }
+}
+.containerInvit{
+  // background-color: blueviolet;
+  &_square{
+    // background-color: teal;
+    padding: 1.5vw;
+    border: 0.3vw solid $resalte;
+  }
+  &_consulta{
+    color: $resalte;
+    font-size: 2vw;
+  }
+
+}
+.containerServices{
+  // background-color: coral;
+  background-image: url('/src/images/fondoUs.jpg');
+
+  &_box{
+    background-color: rgba(44, 43, 43, 0.7);
+
+    &__title{
+      // background-color: orangered;
+      color: aliceblue;
+
+    }
+    &__body{
+      // background-color: orchid;
+
+      .servicesBox_icon{
+        // background-color: aqua;
+        color: $resalte;
+        font-size: 3.5vw;
+
+      }
+      .servicesBox_title{
+        // background-color: bisque;
+        .sbT{
+          color: $clAlterno;
+        }
+      }
+      .servicesBox_text{
+        // background-color: burlywood;
+        color: aliceblue;
+      }
+      &.sb1{
+        // background-color: blue;
+
+      }
+      &.sb2{
+        // background-color: maroon;
+
+      }
+    }
+  }
+}
+.containerDetail{
+  // background-color: cornflowerblue;
+
+  &_title{
+    .titleMain{
+      // background-color: green;
+      color: aliceblue;
+    }
+  }
+  .content-width{
+    // background-color: yellow;
+    // color: $color;
+  }
+  .form{
+    // background-color: royalblue;
+    .contact{
+      // background-color: red;
+      padding: 1.2vw;
+      border: 0.1vw solid $clAlterno;
+      color: $clAlterno;
+      font-size: 2vw;
+      a{
+        list-style: none;
+        text-decoration: none;
+      }
+    }
+
+  }
+}
+.containerPromotion{
+  margin-top: 2vw;
+  background-color: $baseredes;
+
+  &_title{
+    // background-color: cadetblue;
+    .titleEnd{
+      color: aliceblue;
+    }
+  }
+  &_squareWs{
+    // background-color: violet;
+    margin: 1vw;
+    padding: 1vw;
+    border: .3vw solid aliceblue;
+    .txtWs{
+      color: aliceblue;
+      font-size: 1.5vw;
+    }
+  }
+}
+.footer{
+  // background-color: burlywood;
+
+  &-Text{
+    // background-color: red;
+    color: aliceblue;
+    p{
+      font-size: 1.5vw;
+    }
+
+  }
+  &-Head{
+    // background-color: plum;
+    margin: 1.5vw;
+    color: $resalte;
+
+  }
+}

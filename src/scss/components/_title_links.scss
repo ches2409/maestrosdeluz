@@ -1,0 +1,36 @@
+.linkContainer{
+  // background-color: purple;
+
+    // background-color: rgb(46, 130, 156);
+    // height: 100%;
+    margin: 0 1rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  &-titles{
+    display: flex;
+    align-items: center;
+
+
+    &_A{
+      // background-color: rgb(172, 132, 23);
+      padding-right: 0.25rem;
+      .text{
+        color: $clBase;
+      }
+    }
+    &_B{;
+      // background-color: rgb(173, 175, 14);
+      padding-left: 0.25rem;
+      .text{
+        color: $clBaseClaro;
+      }
+    }
+  }
+  &-intro{
+    // background-color: rgb(230, 208, 19);
+    padding: .5rem 1rem;
+    text-align: center;
+  }
+}

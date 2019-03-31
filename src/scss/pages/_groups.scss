@@ -1,0 +1,48 @@
+.groupsContainer{
+  background-image: imgPath('imgGroups.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  &-banners{
+    margin-top: 5%;
+  }
+  &-bannerUno{
+    // background-color: rgb(40, 89, 194);
+    .backg1{
+      border: .2rem solid yellow;
+    }
+    .backgImg{
+      // background-color: yellowgreen;
+      background-image: imgPath('ManadaHathi.png');
+      background-size: 70%;
+    }
+  }
+  &-bannerDos{
+    // background-color: rgb(82, 68, 204);
+    .backg1{
+      border: .2rem solid green;
+    }
+    .backgImg{
+      background-image: imgPath('tropaCamelot.png');
+      background-size: 65%;
+    }
+  }
+  &-bannerTres{
+    // background-color: rgb(17, 10, 136);
+    .backg1{
+      border: .2rem solid blue;
+    }
+    .backgImg{
+      background-image: imgPath('comunidadWallace.png');
+      background-size: 85%;
+    }
+  }
+  &-bannerCuatro{
+    // background-color: rgb(49, 4, 100);
+    .backgImg{
+      background-image: imgPath('clanMaclaren.png');
+      background-size: 65%;
+    }
+  }
+ }
+

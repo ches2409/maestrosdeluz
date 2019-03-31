@@ -1,0 +1,109 @@
+//-Todas las funciones a usar en el desarrollo del sitio
+@function imgPath($img){
+  @return url($path + $img);
+}
+
+//CREAR LA FUNCION DE TINT Y DE SHADE
+@function tint($color, $porcentaje) {
+  @return mix(white, $color, $porcentaje);
+}
+@function shade($color, $porcentaje) {
+  @return mix(black, $color, $porcentaje);
+}
+
+//FUNCION PARA COLORES MONOCROMÁTICOS
+@function monocromo($color, $cambio:n) {
+  //claros
+  @if $cambio==n {
+    @return $color;
+  }
+  @if $cambio==l1 {
+    @return tint($color, 75%);
+  }
+  @if $cambio==l2 {
+    @return tint($color, 25%);
+  }
+  @if $cambio==l3 {
+    @return tint($color, 10%);
+  }
+  //oscuros
+  @if $cambio==d1 {
+    @return shade($color, 75%);
+  }
+  @if $cambio==d2 {
+    @return shade($color, 25%);
+  }
+  @if $cambio==d3 {
+    @return shade($color, 10%);
+  }
+}
+
+// complementario puro
+
+@function complementario($color, $cambio:c) {
+  @if $cambio==c {
+    @return complement($color);
+  }
+}
+
+@function triada($color, $cambio:n) {
+  @if $cambio==n {
+    @return $color;
+  }
+  @if $cambio==t1 {
+    @return adjust-hue($color, 120deg);
+  }
+  @if $cambio==t2 {
+    @return adjust-hue($color, 240deg);
+  }
+}
+//complementarios divididos
+@function complemtarioD($color, $cambio:n) {
+  @if $cambio==n {
+    @return $color;
+  }
+  @if $cambio==c1 {
+    @return adjust-hue($color, 210deg);
+  }
+  @if $cambio==c2 {
+    @return adjust-hue($color, 150deg);
+  }
+}
+//Analogos
+@function analogos($color, $cambio:n) {
+  @if $cambio==n {
+    @return $color;
+  }
+  @if $cambio==a1 {
+    @return adjust-hue($color, 30deg);
+  }
+  @if $cambio==a2 {
+    @return adjust-hue($color, -30deg);
+  }
+}
+//Triada
+@function triada($resalte, $cambio:n) {
+  @if $cambio==n {
+    @return $color;
+  }
+  @if $cambio==t1 {
+    @return adjust-hue($resalte, 120deg);
+  }
+  @if $cambio==t2 {
+    @return adjust-hue($resalte, 240deg);
+  }
+}
+
+
+//split de colores complementarios
+@function split($color, $cambio:n) {
+  @if $cambio==n {
+    @return $color;
+  }
+  @if $cambio==s1 {
+    @return adjust-hue($color, 150deg);
+  }
+  @if $cambio==s2 {
+    @return adjust-hue($color, 210deg);
+  }
+}

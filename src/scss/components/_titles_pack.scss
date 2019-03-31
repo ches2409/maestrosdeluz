@@ -1,0 +1,36 @@
+.titleContainer{
+  // background-color: rgb(133, 25, 25);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  &-fig{
+    // background-color: rgb(215, 169, 20);
+    height: 100%;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    .figure{
+      margin-left: 1rem;
+      border-left: 3rem solid $clResalte;
+      border-top: 3rem solid transparent;
+      border-bottom: 3rem solid transparent;
+    }
+  }
+  &-title{
+    grid-column: 2;
+    margin-left: .8rem;
+    margin-top: -1rem;
+
+  }
+  .title-darkS{
+    color: $clSecondary;
+    font-weight: $ligth;
+    margin-top: 0.5rem;
+    margin-bottom: -1.5rem;
+  }
+  .title-lightS{
+    color: $clSecClaro;
+    font-weight: normal;
+    //margin-top: -1rem;
+  }
+}

@@ -1,0 +1,186 @@
+$header-bg-op-0: rgba(159, 162, 141, 0.1);
+$header-bg-op-1: rgba(159, 162, 141, 1);
+$header-bg-op-2: rgba(159, 162, 141, 0.95);
+$header-color: $clAlterno;
+$header-height: 4rem;
+$header-container-width: 1200px;
+
+// $logo-url: imgPath('escudo.png');
+$logo-url: "images/escudo.png";
+$logo-width: 4rem;
+$logo-height: 4rem;
+$logo-bg-size: 3rem;
+
+$header-area: '. logo hamburger'; // 'logo . hamburger' | '. logo hamburger' | 'hamburger . logo' | 'hamburger logo .'
+$logo-position: start; //start | center | end
+$hamburger-position: end; //start | end
+
+$hamburger-color: $clTextoGen;
+
+@mixin panel-direction($dir) {
+  @if $dir == left {
+    transform: translateX(-110%);
+    &.is-active { transform: translateX(0); }
+  } @else if $dir == right {
+    transform: translateX(100%);
+    &.is-active { transform: translateX(0); }
+  } @else if $dir == top {
+    transform: translateY(-100%);
+    &.is-active { transform: translateY(0); }
+  } @else if $dir == bottom {
+    transform: translateY(100%);
+    &.is-active { transform: translateY(0); }
+  }
+}
+
+.hamburger:focus {
+  outline: 0;
+  border: 0;
+}
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before { background-color: $hamburger-color; }
+
+.u-afterFixed { padding-top: $header-height; }
+
+.Header {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: $header-height;
+  transition: all .3s ease-out;
+  background-color: $header-bg-op-0;
+  transition: background-color .3s linear;
+
+  &.is-active {
+    background-color: $header-bg-op-1;
+  }
+
+  &-container {
+    margin: auto;
+    max-width: $header-container-width;
+    display: grid;
+    grid-template: {
+      columns: repeat(3, 1fr);
+      rows: $header-height, auto;
+      areas: $header-area
+             'panel panel panel';
+    }
+  }
+}
+
+.Logo {
+  // background-color: red;
+  opacity: 0;
+  z-index: 10001;
+  grid-area: logo;
+  justify-self: $logo-position;
+  @include centerFlex;
+  transition: opacity .3s ease-in;
+  &.is-active{
+    opacity: 1;
+  }
+
+  &-link {
+    display: block;
+    width: $logo-width;
+    height: $logo-height;
+    text-indent: -9999px;
+    background: {
+      image: url($logo-url);
+      size: $logo-bg-size;
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+}
+
+.Panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow-y: auto;
+  grid-area: panel;
+  background-color: $header-bg-op-2;
+  // background-color: violet;
+  transition: transform .3s ease-out;
+  @include panel-direction(left);
+
+  &-button {
+    z-index: 999;
+    grid-area: hamburger;
+    justify-self: $hamburger-position;
+  }
+}
+.Menu {
+  margin-top: calc(#{$header-height} + 2rem);
+
+   &-listItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+  }
+
+  &-link {
+    display: block;
+    padding: 1rem 1.5rem;
+    font: {
+      weight: $medium;
+      size: 1.5rem;
+    }
+    color: $hamburger-color;
+    text-decoration: none;
+    transition: all .3s ease-out;
+  }
+
+  &-link:hover {
+    color: $header-color;
+    text-transform: uppercase;
+    transition: all .5s ease-out;
+    background-color: $color;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .Header {
+    &-container {
+      grid-template: {
+        columns: auto 1fr;
+        rows: $header-height;
+        areas: 'logo panel';
+      }
+    }
+  }
+
+  .Logo {
+    justify-self: start; }
+
+  .Panel {
+    position: static;
+    overflow-y: visible;
+    transform: translate(0, 0);
+    background-color: transparent;
+
+    &-button { display: none; }
+  }
+
+  .Menu {
+    margin-top: 0;
+
+    &-listItem {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &-link { border-top: medium solid transparent; }
+
+    &-link:hover {
+      border-top: medium solid $header-color;
+      background-color: transparent;
+    }
+  }
+}

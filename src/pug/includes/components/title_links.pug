@@ -1,0 +1,15 @@
+mixin titleLinks(tituloA, tituloB, texto, nombre)
+  article.linkContainer(class="infoContainer-link", id=`${nombre}`)
+    .linkContainer-titles
+      .linkContainer-titles_A
+        h4.text #{tituloA}
+      .linkContainer-titles_B
+        h4.text #{tituloB}
+    .linkContainer-intro
+      P #{texto}
+      //- input.inModal-open(type="radio", name=`${nombre}`, id='open'+`${nombre}`)
+      //- label.lModal(for='open'+`${nombre}`) #[i.fa.fa-plus-circle]
+      //- input.inModal-close(type="radio", name=`${nombre}`, id='close'+`${nombre}`)
+      //- label.lModal(for='close'+`${nombre}`) #[i.fa.fa-close]
+      block
+      //- a(href="./") #[i.fa.fa-plus-circle]

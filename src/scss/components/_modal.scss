@@ -1,0 +1,170 @@
+.lbText{
+  // background-color: red;
+  margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  align-items: center;
+  &-open {
+    // background-color: red;
+    display: flex;
+    z-index: 1900;
+    .fa{
+      // background-color: orangered;
+      cursor: pointer;
+      // background-color: red;
+      color:$rojoOxford;
+      font-size: $t3;
+      transition: color .3s linear,
+                  transform .3s ease-in-out;
+      will-change: transform;
+      &:hover{
+        color: $azulOxford;
+        transform: scale(1.5);
+      }
+    }
+  }
+  &-overlay{
+    // width: 100vw;
+		// height: 100vh;
+    width: 0;
+		height: 0;
+		position: fixed;
+    overflow: hidden;
+		left: 0px;
+    top: 0px;
+    opacity:1;
+    @include centerFlex;
+		// padding: 0px;
+		z-index: 99;
+    text-align: center;
+    @include radial-gradient(rgba(89, 90, 87, .1), rgba(89, 90, 87, .6), 100%);
+    z-index: 2000;
+    &:target{
+      width: 100vw;
+	  	height: 100vh;
+    }
+    &:target .lbText-overlay__content{
+      opacity: 1;
+    }
+    &:target .lbText-overlay__bottom a{
+      opacity:1;
+    }
+
+    &__content{
+      width: 60%;
+      height: auto;
+      // position: relative;
+      opacity: 0;
+      background-color: white;
+      border-radius: 7rem 0 7rem 0;
+      box-shadow: 0px 0px 50px 6px rgba(0,0,0,0.3);
+      transition: opacity 0.5s linear;
+    }
+    &__bottom a{
+      // font-weight: bold;
+      // position: absolute;
+      position: relative;
+      margin-left: 2rem;
+      z-index: 1001;
+      font-size: $t1;
+      color: $clResalte;
+      opacity: 0;
+    }
+    &__bottom .fa{
+      transition: color .3s linear,
+                  transform .3s ease-in-out;
+      &:hover{
+        color: yellowgreen;
+        transform: scale(1.5);
+      }
+    }
+  }
+  &-titleIn{
+      color: $clSecondary;
+      padding-right: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  .textWrap{
+    padding: 1rem 5rem 3rem 5rem;
+    .parrafo1,
+    .parrafo2{
+      p:first-child{
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    .parrafo2{
+      margin-top: 1rem;
+    }
+  }
+  &-textIn{
+    // padding: 1rem 5rem;
+    text-align: justify;
+  }
+
+}
+@keyframes fadeInScale {
+		0% { transform: scale(0.6); opacity: 0; }
+		100% { transform: scale(1); opacity: 1; }
+	}
+
+// .modalBox{
+//   background-color:rgba(#000,.9);
+//   position: fixed;
+//   top: -100vh;
+//   left: 0;
+//   @include centerFlex;
+//   flex-direction: column;
+//   width: 100%;
+//   height: 100vh;
+//   z-index: 2000;
+//   transition: all .5s ease-in-out;
+//   &-title{
+//     background-color: #fff;
+//     width: 75%;
+//     color: $clResalte;
+//     text-align: right;
+//   }
+//   &-text{
+//     color: $clTextoGen;
+//     width: 70%;
+//     font-size: $normal;
+//     text-align: justify;
+//   }
+//   // &-link{
+//   //   .fa{
+//   //     position: relative;
+//   //     top: -13rem;
+//   //     right: -28rem;
+//   //     z-index: 2050;
+//   //     font-size: $t2;
+//   //     color: yellowgreen;
+//   //     cursor: pointer;
+//   //     transition: all .3s ease-in-out;
+//   //     &:hover{
+//   //       color: $clBase;
+//   //     }
+//   //   }
+//   // }
+// }
+// .inModal-open{
+//   display: none;
+//   + label{
+//     // background-color: red;
+//     color:$rojoOxford;
+//     font-size: $t3;
+//     cursor: pointer;
+//     transition: all .3s ease-in-out;
+//     &:hover{
+//       color: $azulOxford;
+//     }
+//   }
+//   &:checked ~ #modal{
+//     top: 0;
+//   }
+// }
+
+

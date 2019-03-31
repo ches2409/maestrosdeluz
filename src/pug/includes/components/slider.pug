@@ -1,0 +1,10 @@
+-imgPath='images/'
+-size=150
+-numeracion=1
+//- debe estar contenido dentro de un .slider
+mixin slider(sliders)
+	.slider__content
+		each item in sliders
+			.slider__item
+				img.slider__img(src=imgPath+`${item[0]}`, alt=item[1], sizes=size, class='img'+(numeracion++))
+				p.slider__caption #{item[2]}

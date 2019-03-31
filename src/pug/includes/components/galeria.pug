@@ -1,0 +1,13 @@
+
+-imgPath='images/'
+-nameInput='navegacion'
+-numeracion=1
+
+mixin galeria(items, images)
+	each item in items
+		if (`${item[1]}`== 'true')
+			input.galery-input(type="radio" name=nameInput id= `${item[0]}` checked, class='input'+(numeracion++))
+		else
+			input.galery-input(type="radio" name=nameInput id= `${item[0]}`, class='input'+(numeracion++))
+	each item in images
+		img.galery-img(src=imgPath+`${item[0]}`, alt=item[1], width="250", class='img'+(numeracion++))

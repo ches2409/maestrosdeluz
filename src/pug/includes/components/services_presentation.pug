@@ -1,0 +1,12 @@
+mixin servicesPresentation(url_imagen,alt, title1, title2, intro )
+  .services
+      .services.container
+        .services-backgr
+        .services-image
+          img.imageWeb(src=url_imagen alt=alt height=sizeImgServices)
+      .services-title
+        h2.title.light #{title1}
+        h2.title.Dark #{title2}
+      .services-introduction
+        p.introText #{intro}
+

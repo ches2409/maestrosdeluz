@@ -1,0 +1,24 @@
+//- ===============================
+//- colores adicionales
+//- ===============================
+$azulOxford:#264E79;
+$rojoOxford: rgb(191, 53, 57);
+//- ===============================
+//- color primario
+//- ===============================
+$clBase: $color;
+$clBaseClaro: tint($clBase, 50%);
+$clBaseTextos:tint($clBase, 80%);
+$clTextoGen:#efefef;
+//- ===============================
+//- color secundario
+//- ===============================
+$clSecondary:$secundario;
+$clSecClaro: tint($clSecondary, 50%);
+$clSecTextos:tint($clSecondary, 80%);
+//- ===============================
+//- color resatle
+//- ===============================
+$clResalte:$resalte;
+$clResalteClaro: tint($clResalte, 50%);
+$clResalteTextos:tint($clResalte, 80%);

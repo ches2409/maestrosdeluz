@@ -1,0 +1,60 @@
+.contactContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 90%;
+  &-reg{
+    // background-color: rgb(168, 11, 155);
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+
+    grid-template-rows: 20% 80%;
+    .headerTitle{
+      // background-color: olive;
+      grid-row: 1;
+    }
+    .reg-form{
+      // background-color: green;
+      grid-row: 2;
+      form {
+        // background-color: violet;
+        height: 95%;
+        width: 95%;
+        display: grid;
+        // justify-items: center;
+        // align-items: center;
+        grid-template-rows: 50% 30% 20%;
+        .datos{
+          // background-color: plum;
+          grid-row: 1;
+          display: grid;
+          // grid-template-rows: 60% 40%;
+        }
+        .mensaje{
+          // background-color: antiquewhite;
+          grid-row: 2;
+        }
+        .buttonContainer{
+          // background-color: rebeccapurple;
+          grid-row: 3;
+        }
+      }
+    }
+  }
+  &-address{
+    // background-color: rgb(83, 6, 77);
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 10% 20% 70%;
+    .address-title{
+      grid-row: 1;
+    }
+    .address-details{
+      grid-row: 2;
+    }
+    .address-map{
+      grid-row: 3;
+    }
+  }
+}

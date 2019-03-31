@@ -1,0 +1,1072 @@
+.mainContainer{
+  background-image: imgPath('imgMain.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  .headerTitle{
+        // background-color: red;
+        width: 30%;
+        // margin-left: 8rem;
+        margin: 6% 0 -2.5rem 15%;
+        // padding-bottom: -1rem;
+        // z-index: 10;
+      }
+  &-sectionOne{
+    // height: auto;
+    // background-color: blue;
+    margin: 0 1rem .5rem 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  &-boxA{
+    // height: 100%;
+    // margin-bottom: 1rem;
+    // padding: .5rem 0;
+    display: flex;
+    align-items: center;
+
+  }
+  &-body_b1{
+    // background-color: rgb(133, 25, 25);
+    text-align: justify;
+    span{
+      font-weight: bold;
+    }
+  }
+  &-links{
+    // background-color: rgb(124, 102, 28);
+    display: flex;
+    align-items: center;
+
+  }
+  &-sectionTwo{
+    // background-color: rgba(50, 52, 141, .9);
+    width: 100vw;
+    margin: 0 .5rem 0 30%;
+    border-radius: 3rem 0 0 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .titleContainer{
+      // background-color: rgb(133, 25, 25);
+      margin-right: .5rem;
+      display: grid;
+      grid-template-columns: 70% 30%;
+      justify-items: center;
+      align-items: center;
+      order: 1;
+      &-fig{
+        // background-color: pink;
+        grid-column: 2 / -1;
+        grid-row: 1 / -1;
+        .figure{
+          margin-left: 0;
+          border-left: 0;
+          border-right: 3rem solid $clResalte;
+
+        }
+      }
+      &-title{
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+        text-align: right;
+        margin-top: -1.5rem;
+      }
+    }
+  }
+    .wrap-text{
+      // background-color: red;
+      padding: 0 1rem;
+      margin: 0 1.5rem 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $clTextoGen;
+      &__j1{
+        // background-color: orange;
+        margin-right:.5rem;
+      }
+      &__j2{
+        // background-color: orangered;
+        margin-left: .5rem;
+      }
+      p{
+        // background-color: red;
+        font-weight: bold;
+      }
+      span{
+        font-weight: normal;
+        font-style: italic;
+        margin-left: .5rem;
+      }
+    }
+  &-sectionThree{
+    // background-color: red;
+    text-align: justify;
+    margin: 2rem 1rem 1rem 25%;
+    display: flex;
+    flex-direction:column;
+  }
+  &-boxC{
+    // background-color:orange;
+    @include centerFlex;
+    margin-bottom: 2rem;
+    .titleContainer{
+      // background-color: rgb(133, 25, 25);
+      margin-right: 1rem;
+    }
+  }
+  &-body_b3{
+    // background-color: red;
+  }
+  // ESTILOS PARA LA SECCION TRES DE LA PAGINA DE INSTITUCIÓN ======
+  &-boxInfo{
+    // background-color: rgb(221, 29, 238);
+    display:flex;
+    margin-top: 2rem;
+
+
+    .wrapOne,
+    .wrapTwo{
+      // height: 80%;
+      background-color: lighten($clAlterno, $amount: 40%);
+      margin: -1rem 10rem 1rem -5rem;
+      display: flex;
+      .boxTitle-title{
+        .boxBcg{
+          // background-color: blue;
+          margin-right: 0;
+        }
+        .prueba{
+          // background-color: salmon;
+          margin: 0 0 0 -2rem;
+        }
+      }
+
+    }
+    // .wrapTwo{
+    //   margin: -1rem 5rem 1rem 0;
+    // }
+  }
+}
+// ================================================================
+// ======================= MEDIA QUERIES ==========================
+// ================================================================
+// ================================================================
+// ======================= 1367 => 1480 ===========================
+// ================================================================
+@include mQ(opS){
+  .mainContainer{
+    // background-color: gray;
+  .headerTitle{
+        // background-color: red;
+        // width: 30%;
+        // margin-left: 8rem;
+        margin: 6% 0 -8rem 15%;
+        // // z-index: 10;
+      }
+  &-sectionOne{
+    // // height: auto;
+    // // background-color: blue;
+    margin: -3rem 1rem 1rem 25%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
+  }
+  &-boxA{
+    // // height: 100%;
+    // // margin-bottom: 1rem;
+    // padding: 1rem 0;
+    // display: flex;
+    // align-items: center;
+
+  }
+  &-body_b1{
+    // // background-color: rgb(133, 25, 25);
+    // text-align: justify;
+    // span{
+    //   font-weight: bold;
+    // }
+  }
+  &-links{
+    // // background-color: rgb(124, 102, 28);
+    // display: flex;
+    // align-items: center;
+
+  }
+  &-sectionTwo{
+    // background-color: rgba(50, 52, 141, .9);
+    // width: 100vw;
+    margin: -3rem 1rem 3rem 30%;
+    // border-radius: 3rem 0 0 3rem;
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: center;
+    .titleContainer{
+      // // background-color: rgb(133, 25, 25);
+      // margin-right: .5rem;
+      // display: grid;
+      // grid-template-columns: 70% 30%;
+      // justify-items: center;
+      // align-items: center;
+      // order: 1;
+      &-fig{
+        // // background-color: pink;
+        // grid-column: 2 / -1;
+        // grid-row: 1 / -1;
+        // .figure{
+        //   margin-left: 0;
+        //   border-left: 0;
+        //   border-right: 3rem solid $clResalte;
+
+        // }
+      }
+      &-title{
+        // grid-column: 1 / 2;
+        // grid-row: 1 / -1;
+        // text-align: right;
+        // margin-top: -1.5rem;
+      }
+    }
+  }
+    .wrap-text{
+      // // background-color: red;
+      // padding: 0 1rem;
+      // margin: 0 1.5rem 0 0;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // color: $clTextoGen;
+      // &__j1{
+      //   // background-color: orange;
+      //   margin-right:.5rem;
+      // }
+      // &__j2{
+      //   // background-color: orangered;
+      //   margin-left: .5rem;
+      // }
+      // p{
+      //   // background-color: red;
+      //   font-weight: bold;
+      // }
+      // span{
+      //   font-weight: normal;
+      //   font-style: italic;
+      //   margin-left: .5rem;
+      // }
+    }
+  &-sectionThree{
+    // // background-color: red;
+    // text-align: justify;
+    // margin: 2rem 1rem 1rem 25%;
+    // display: flex;
+    // flex-direction:column;
+  }
+  &-boxC{
+    // // background-color:orange;
+    // @include centerFlex;
+    // margin-bottom: 2rem;
+    // .titleContainer{
+    //   // background-color: rgb(133, 25, 25);
+    //   margin-right: 1rem;
+    // }
+  }
+  &-body_b3{
+    // background-color: red;
+  }
+  // ESTILOS PARA LA SECCION TRES DE LA PAGINA DE INSTITUCIÓN ======
+  &-boxInfo{
+    // // background-color: rgb(221, 29, 238);
+    // display:flex;
+    // margin-top: 2rem;
+
+
+    .wrapOne,
+    .wrapTwo{
+      // height: 80%;
+      // background-color: lighten($clAlterno, $amount: 40%);
+      // margin: -1rem 10rem 1rem -5rem;
+
+    }
+    .wrapTwo{
+      // margin: -1rem 5rem 1rem 0;
+    }
+  }
+
+}
+}
+// ================================================================
+// ======================= 1281 => 1366 ===========================
+// ================================================================
+@include mQ(xlS){
+  .mainContainer{
+    // background-color: steelblue;
+  // background-image: imgPath('imgMain.png');
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-attachment: fixed;
+  // display: flex;
+  // flex-wrap: wrap;
+  .headerTitle{
+        // background-color: red;
+        width: 30%;
+        // margin-left: 8rem;
+        margin: 6% 0 -2.5rem 15%;
+        // padding-bottom: -1rem;
+        // z-index: 10;
+      }
+  &-sectionOne{
+    // // height: auto;
+    // // background-color: blue;
+    // margin: 0 1rem 1.5rem 25%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
+  }
+  &-boxA{
+    // // height: 100%;
+    // // margin-bottom: 1rem;
+    // padding: 1rem 0;
+    // display: flex;
+    // align-items: center;
+
+  }
+  &-body_b1{
+    // // background-color: rgb(133, 25, 25);
+    // text-align: justify;
+    // span{
+    //   font-weight: bold;
+    // }
+  }
+  &-links{
+    // // background-color: rgb(124, 102, 28);
+    // display: flex;
+    // align-items: center;
+
+  }
+  &-sectionTwo{
+    // background-color: rgba(50, 52, 141, .9);
+    // width: 100vw;
+    // margin: 0 1rem 0 30%;
+    // border-radius: 3rem 0 0 3rem;
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: center;
+    .titleContainer{
+      // // background-color: rgb(133, 25, 25);
+      // margin-right: .5rem;
+      // display: grid;
+      // grid-template-columns: 70% 30%;
+      // justify-items: center;
+      // align-items: center;
+      // order: 1;
+      &-fig{
+        // // background-color: pink;
+        // grid-column: 2 / -1;
+        // grid-row: 1 / -1;
+        // .figure{
+        //   margin-left: 0;
+        //   border-left: 0;
+        //   border-right: 3rem solid $clResalte;
+
+        // }
+      }
+      &-title{
+        // grid-column: 1 / 2;
+        // grid-row: 1 / -1;
+        // text-align: right;
+        // margin-top: -1.5rem;
+      }
+    }
+  }
+    .wrap-text{
+      // // background-color: red;
+      // padding: 0 1rem;
+      // margin: 0 1.5rem 0 0;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // color: $clTextoGen;
+      // &__j1{
+      //   // background-color: orange;
+      //   margin-right:.5rem;
+      // }
+      // &__j2{
+      //   // background-color: orangered;
+      //   margin-left: .5rem;
+      // }
+      // p{
+      //   // background-color: red;
+      //   font-weight: bold;
+      // }
+      // span{
+      //   font-weight: normal;
+      //   font-style: italic;
+      //   margin-left: .5rem;
+      // }
+    }
+  &-sectionThree{
+    // // background-color: red;
+    // text-align: justify;
+    // margin: 2rem 1rem 1rem 25%;
+    // display: flex;
+    // flex-direction:column;
+  }
+  &-boxC{
+    // // background-color:orange;
+    // @include centerFlex;
+    // margin-bottom: 2rem;
+    // .titleContainer{
+    //   // background-color: rgb(133, 25, 25);
+    //   margin-right: 1rem;
+    // }
+  }
+  &-body_b3{
+    // background-color: red;
+  }
+  // ESTILOS PARA LA SECCION TRES DE LA PAGINA DE INSTITUCIÓN ======
+  &-boxInfo{
+    // // background-color: rgb(221, 29, 238);
+    // display:flex;
+    // margin-top: 2rem;
+
+
+    .wrapOne,
+    .wrapTwo{
+      // height: 80%;
+      // background-color: lighten($clAlterno, $amount: 40%);
+      // margin: -1rem 10rem 1rem -5rem;
+
+    }
+    .wrapTwo{
+      // margin: -1rem 5rem 1rem 0;
+    }
+  }
+
+}
+}
+// ================================================================
+// ======================= 1025 => 1280 ===========================
+// ================================================================
+
+@include mQ(largeS){
+  .mainContainer{
+    // background-color: red;
+  .headerTitle{
+        // // background-color: red;
+        margin: 10% 0 2.5rem 15%;
+      }
+  &-sectionOne{
+
+  }
+  &-boxA{
+  }
+  &-body_b1{
+  }
+  &-links{
+    // background-color: rgb(124, 102, 28);
+    margin-top:1rem;
+
+  }
+  &-sectionTwo{
+    // background-color: rgba(50, 52, 141, .9);
+    margin: .5rem .5rem 0 15%;
+    padding: 1rem;
+    .titleContainer{
+      &-fig{
+      }
+      &-title{
+      }
+    }
+  }
+    .wrap-text{
+      // background-color: white;
+    }
+  &-sectionThree{
+    // background-color: bisque;
+    // text-align: justify;
+    margin: 2rem 1rem 2rem 20%;
+    // display: flex;
+    // flex-direction:column;
+  }
+  &-boxC{
+    // background-color:orange;
+    // @include centerFlex;
+    margin-bottom: 0;
+    .titleContainer{
+      // background-color: rgb(133, 25, 25);
+    }
+  }
+  &-body_b3{
+  }
+  // ESTILOS PARA LA SECCION TRES DE LA PAGINA DE INSTITUCIÓN ======
+  &-boxInfo{
+    // background-color: rgb(221, 29, 238);
+    margin: 1rem 0 1rem 0;
+
+
+    .wrapOne,
+    .wrapTwo{
+      // background-color: lighten($clAlterno, $amount: 40%);
+      margin: 0 10rem 1rem -5rem;
+
+    }
+  }
+
+}
+}
+// ================================================================
+// ======================= 751 => 1024 ============================
+// ================================================================
+
+@include mQ(wideS){
+  .mainContainer{
+    // background-color: green;
+  .headerTitle{
+        // // background-color: red;
+        margin: 12% 0 1.5rem 5%;
+      }
+  &-sectionOne{
+    // background-color: white;
+    margin: 0 1rem .5rem 2%;
+  }
+  &-boxA{
+  }
+  &-body_b1{
+  }
+  &-links{
+    // background-color: rgb(124, 102, 28);
+    margin-top:1rem;
+
+  }
+  &-sectionTwo{
+    // background-color: rgba(50, 52, 141, .9);
+    margin: .5rem .5rem 0 0;
+    padding: .5rem;
+    .titleContainer{
+      &-fig{
+      }
+      &-title{
+      }
+    }
+  }
+    .wrap-text{
+      // background-color: purple;
+      padding: 0;
+      margin: 0 0 0 1rem;
+      &__j1{
+        // background-color: orange;
+        margin-right:.2rem;
+      }
+      &__j2{
+        // background-color: orangered;
+        margin-left: .2rem;
+      }
+      p{
+        // background-color: red;
+        font-weight: bold;
+      }
+      span{
+        font-weight: normal;
+        font-style: italic;
+        margin-left: .25rem;
+      }
+    }
+  &-sectionThree{
+    // background-color: bisque;
+    // text-align: justify;
+    margin: 1rem 1rem 1rem 2%;
+    // display: flex;
+    // flex-direction:column;
+  }
+  &-boxC{
+    // background-color:orange;
+    // @include centerFlex;
+    margin-bottom: 0;
+    .titleContainer{
+      // background-color: rgb(133, 25, 25);
+    }
+  }
+  &-body_b3{
+  }
+  // ESTILOS PARA LA SECCION TRES DE LA PAGINA DE INSTITUCIÓN ======
+  &-boxInfo{
+    // background-color: rgb(221, 29, 238);
+    margin: 1rem 0 1rem 0;
+
+
+    .wrapOne,
+    .wrapTwo{
+      // background-color: lighten($clAlterno, $amount: 40%);
+      margin: 0 2rem 1rem 0;
+
+    }
+  }
+
+}
+}
+// ================================================================
+// ======================= 521 => 750 =============================
+// ================================================================
+
+@include mQ(mediumS){
+  .mainContainer{
+    // background-color: orange;
+  // background-image: imgPath('imgMain.png');
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-attachment: fixed;
+  // display: flex;
+  // flex-wrap: wrap;
+  .headerTitle{
+        // // background-color: red;
+        // width: 30%;
+        // // margin-left: 8rem;
+        // margin: 5% 0 0 15%;
+        // // z-index: 10;
+      }
+  &-sectionOne{
+    // // height: auto;
+    // // background-color: blue;
+    // margin: 0 1rem 1.5rem 25%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
+  }
+  &-boxA{
+    // // height: 100%;
+    // // margin-bottom: 1rem;
+    // padding: 1rem 0;
+    // display: flex;
+    // align-items: center;
+
+  }
+  &-body_b1{
+    // // background-color: rgb(133, 25, 25);
+    // text-align: justify;
+    // span{
+    //   font-weight: bold;
+    // }
+  }
+  &-links{
+    // // background-color: rgb(124, 102, 28);
+    // display: flex;
+    // align-items: center;
+
+  }
+  &-sectionTwo{
+    // background-color: rgba(50, 52, 141, .9);
+    // width: 100vw;
+    // margin: 0 1rem 0 30%;
+    // border-radius: 3rem 0 0 3rem;
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: center;
+    .titleContainer{
+      // // background-color: rgb(133, 25, 25);
+      // margin-right: .5rem;
+      // display: grid;
+      // grid-template-columns: 70% 30%;
+      // justify-items: center;
+      // align-items: center;
+      // order: 1;
+      &-fig{
+        // // background-color: pink;
+        // grid-column: 2 / -1;
+        // grid-row: 1 / -1;
+        // .figure{
+        //   margin-left: 0;
+        //   border-left: 0;
+        //   border-right: 3rem solid $clResalte;
+
+        // }
+      }
+      &-title{
+        // grid-column: 1 / 2;
+        // grid-row: 1 / -1;
+        // text-align: right;
+        // margin-top: -1.5rem;
+      }
+    }
+  }
+    .wrap-text{
+      // // background-color: red;
+      // padding: 0 1rem;
+      // margin: 0 1.5rem 0 0;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // color: $clTextoGen;
+      // &__j1{
+      //   // background-color: orange;
+      //   margin-right:.5rem;
+      // }
+      // &__j2{
+      //   // background-color: orangered;
+      //   margin-left: .5rem;
+      // }
+      // p{
+      //   // background-color: red;
+      //   font-weight: bold;
+      // }
+      // span{
+      //   font-weight: normal;
+      //   font-style: italic;
+      //   margin-left: .5rem;
+      // }
+    }
+  &-sectionThree{
+    // // background-color: red;
+    // text-align: justify;
+    // margin: 2rem 1rem 1rem 25%;
+    // display: flex;
+    // flex-direction:column;
+  }
+  &-boxC{
+    // // background-color:orange;
+    // @include centerFlex;
+    // margin-bottom: 2rem;
+    // .titleContainer{
+    //   // background-color: rgb(133, 25, 25);
+    //   margin-right: 1rem;
+    // }
+  }
+  &-body_b3{
+    // background-color: red;
+  }
+  // ESTILOS PARA LA SECCION TRES DE LA PAGINA DE INSTITUCIÓN ======
+  &-boxInfo{
+    // // background-color: rgb(221, 29, 238);
+    // display:flex;
+    // margin-top: 2rem;
+
+
+    .wrapOne,
+    .wrapTwo{
+      // height: 80%;
+      // background-color: lighten($clAlterno, $amount: 40%);
+      // margin: -1rem 10rem 1rem -5rem;
+
+    }
+    .wrapTwo{
+      // margin: -1rem 5rem 1rem 0;
+    }
+  }
+
+}
+}
+// ================================================================
+// ======================= 471 => 520 =============================
+// ================================================================
+
+@include mQ(smallS){
+  .mainContainer{
+    // background-color: blue;
+  // background-image: imgPath('imgMain.png');
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-attachment: fixed;
+  // display: flex;
+  // flex-wrap: wrap;
+  .headerTitle{
+        // // background-color: red;
+        // width: 30%;
+        // // margin-left: 8rem;
+        // margin: 5% 0 0 15%;
+        // // z-index: 10;
+      }
+  &-sectionOne{
+    // // height: auto;
+    // // background-color: blue;
+    // margin: 0 1rem 1.5rem 25%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
+  }
+  &-boxA{
+    // // height: 100%;
+    // // margin-bottom: 1rem;
+    // padding: 1rem 0;
+    // display: flex;
+    // align-items: center;
+
+  }
+  &-body_b1{
+    // // background-color: rgb(133, 25, 25);
+    // text-align: justify;
+    // span{
+    //   font-weight: bold;
+    // }
+  }
+  &-links{
+    // // background-color: rgb(124, 102, 28);
+    // display: flex;
+    // align-items: center;
+
+  }
+  &-sectionTwo{
+    // background-color: rgba(50, 52, 141, .9);
+    // width: 100vw;
+    // margin: 0 1rem 0 30%;
+    // border-radius: 3rem 0 0 3rem;
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: center;
+    .titleContainer{
+      // // background-color: rgb(133, 25, 25);
+      // margin-right: .5rem;
+      // display: grid;
+      // grid-template-columns: 70% 30%;
+      // justify-items: center;
+      // align-items: center;
+      // order: 1;
+      &-fig{
+        // // background-color: pink;
+        // grid-column: 2 / -1;
+        // grid-row: 1 / -1;
+        // .figure{
+        //   margin-left: 0;
+        //   border-left: 0;
+        //   border-right: 3rem solid $clResalte;
+
+        // }
+      }
+      &-title{
+        // grid-column: 1 / 2;
+        // grid-row: 1 / -1;
+        // text-align: right;
+        // margin-top: -1.5rem;
+      }
+    }
+  }
+    .wrap-text{
+      // // background-color: red;
+      // padding: 0 1rem;
+      // margin: 0 1.5rem 0 0;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // color: $clTextoGen;
+      // &__j1{
+      //   // background-color: orange;
+      //   margin-right:.5rem;
+      // }
+      // &__j2{
+      //   // background-color: orangered;
+      //   margin-left: .5rem;
+      // }
+      // p{
+      //   // background-color: red;
+      //   font-weight: bold;
+      // }
+      // span{
+      //   font-weight: normal;
+      //   font-style: italic;
+      //   margin-left: .5rem;
+      // }
+    }
+  &-sectionThree{
+    // // background-color: red;
+    // text-align: justify;
+    // margin: 2rem 1rem 1rem 25%;
+    // display: flex;
+    // flex-direction:column;
+  }
+  &-boxC{
+    // // background-color:orange;
+    // @include centerFlex;
+    // margin-bottom: 2rem;
+    // .titleContainer{
+    //   // background-color: rgb(133, 25, 25);
+    //   margin-right: 1rem;
+    // }
+  }
+  &-body_b3{
+    // background-color: red;
+  }
+  // ESTILOS PARA LA SECCION TRES DE LA PAGINA DE INSTITUCIÓN ======
+  &-boxInfo{
+    // // background-color: rgb(221, 29, 238);
+    // display:flex;
+    // margin-top: 2rem;
+
+
+    .wrapOne,
+    .wrapTwo{
+      // height: 80%;
+      // background-color: lighten($clAlterno, $amount: 40%);
+      // margin: -1rem 10rem 1rem -5rem;
+
+    }
+    .wrapTwo{
+      // margin: -1rem 5rem 1rem 0;
+    }
+  }
+
+}
+}
+// ================================================================
+// ======================= 1 => 470 ===============================
+// ================================================================
+
+@include mQ(xsS){
+  .mainContainer{
+    // background-color: purple;
+  // background-image: imgPath('imgMain.png');
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-attachment: fixed;
+  // display: flex;
+  // flex-wrap: wrap;
+  .headerTitle{
+        // // background-color: red;
+        // width: 30%;
+        // // margin-left: 8rem;
+        // margin: 5% 0 0 15%;
+        // // z-index: 10;
+      }
+  &-sectionOne{
+    // // height: auto;
+    // // background-color: blue;
+    // margin: 0 1rem 1.5rem 25%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
+  }
+  &-boxA{
+    // // height: 100%;
+    // // margin-bottom: 1rem;
+    // padding: 1rem 0;
+    // display: flex;
+    // align-items: center;
+
+  }
+  &-body_b1{
+    // // background-color: rgb(133, 25, 25);
+    // text-align: justify;
+    // span{
+    //   font-weight: bold;
+    // }
+  }
+  &-links{
+    // // background-color: rgb(124, 102, 28);
+    // display: flex;
+    // align-items: center;
+
+  }
+  &-sectionTwo{
+    // background-color: rgba(50, 52, 141, .9);
+    // width: 100vw;
+    // margin: 0 1rem 0 30%;
+    // border-radius: 3rem 0 0 3rem;
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: center;
+    .titleContainer{
+      // // background-color: rgb(133, 25, 25);
+      // margin-right: .5rem;
+      // display: grid;
+      // grid-template-columns: 70% 30%;
+      // justify-items: center;
+      // align-items: center;
+      // order: 1;
+      &-fig{
+        // // background-color: pink;
+        // grid-column: 2 / -1;
+        // grid-row: 1 / -1;
+        // .figure{
+        //   margin-left: 0;
+        //   border-left: 0;
+        //   border-right: 3rem solid $clResalte;
+
+        // }
+      }
+      &-title{
+        // grid-column: 1 / 2;
+        // grid-row: 1 / -1;
+        // text-align: right;
+        // margin-top: -1.5rem;
+      }
+    }
+  }
+    .wrap-text{
+      // // background-color: red;
+      // padding: 0 1rem;
+      // margin: 0 1.5rem 0 0;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // color: $clTextoGen;
+      // &__j1{
+      //   // background-color: orange;
+      //   margin-right:.5rem;
+      // }
+      // &__j2{
+      //   // background-color: orangered;
+      //   margin-left: .5rem;
+      // }
+      // p{
+      //   // background-color: red;
+      //   font-weight: bold;
+      // }
+      // span{
+      //   font-weight: normal;
+      //   font-style: italic;
+      //   margin-left: .5rem;
+      // }
+    }
+  &-sectionThree{
+    // // background-color: red;
+    // text-align: justify;
+    // margin: 2rem 1rem 1rem 25%;
+    // display: flex;
+    // flex-direction:column;
+  }
+  &-boxC{
+    // // background-color:orange;
+    // @include centerFlex;
+    // margin-bottom: 2rem;
+    // .titleContainer{
+    //   // background-color: rgb(133, 25, 25);
+    //   margin-right: 1rem;
+    // }
+  }
+  &-body_b3{
+    // background-color: red;
+  }
+  // ESTILOS PARA LA SECCION TRES DE LA PAGINA DE INSTITUCIÓN ======
+  &-boxInfo{
+    // // background-color: rgb(221, 29, 238);
+    // display:flex;
+    // margin-top: 2rem;
+
+
+    .wrapOne,
+    .wrapTwo{
+      // height: 80%;
+      // background-color: lighten($clAlterno, $amount: 40%);
+      // margin: -1rem 10rem 1rem -5rem;
+
+    }
+    .wrapTwo{
+      // margin: -1rem 5rem 1rem 0;
+    }
+  }
+
+}
+}
