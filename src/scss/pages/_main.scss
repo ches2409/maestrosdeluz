@@ -377,7 +377,104 @@ body{
         }
       }
     }
+    &-Service{
+    // background-color: yellowgreen;
 
+    &.sectionOne{
+      background-image: url('/src/images/img01_600.png');
+      .mainContainer-Service_banner{
+        // background-color: plum;
+
+        &__icon{
+          // background-color: red;
+
+        }
+        &__title{
+          .bannerTitle1{
+          }
+        }
+        &__body{
+          // background-color: antiquewhite;
+          // margin-top: 2vw;
+          h3{
+          }
+          h4{
+          }
+          .textoBody{
+          }
+        }
+      }
+    }
+    &.sectionTwo{
+      background-image: url('/src/images/img02_600.png');
+      // background-attachment: fixed;
+      .mainContainer-Service_banner{
+
+        // background-color: aqua;
+
+        &__icon{
+          // background-color: red;
+        }
+        &__title{
+          // background-color: rgb(248, 248, 255);
+          .bannerTitle2{
+          }
+        }
+        &__body{
+          // background-color: antiquewhite;
+          .mainContainer-Service_articleBox_ab2{
+            // background-color: maroon;
+
+          }
+          .fraseBody{
+          }
+          .invitacionBody{
+          }
+          .emphasis{
+          }
+          .textoBody{
+          }
+
+        }
+      }
+    }
+    &.sectionThree{
+      background-image: url('/src/images/img03_600.png');
+      .mainContainer-Service_banner{
+
+        // background-color: aqua;
+        &__icon{
+          // background-color: red;
+          font-size: 3rem;
+        }
+        &__title{
+          // background-color: blue;
+          color: $baseredes;
+          font-size: 1.8rem;
+        }
+        &__body{
+          // background-color: antiquewhite;
+          .mainContainer-Service_articleBox_ab3{
+            // background-color: maroon;
+
+          }
+          .fraseBody{
+            margin: 3.5rem 0.5rem;
+            font-size: 1.5rem;
+            span{
+              font-size: 1.5rem;
+            }
+          }
+          .invitacionBody{
+            // background-color: yellowgreen;
+            font-size: 1.5rem;
+          }
+
+        }
+      }
+
+    }
+  }
   }
 }
 @include mQ(wideS){
@@ -398,6 +495,7 @@ body{
         // color:$resalte;
       }
     }
+
   }
 }
 @include mQ(largeS){
@@ -406,6 +504,105 @@ body{
     &-sectionUs{
       // background-color: violet;
     }
+    &-Service{
+    // background-color: yellowgreen;
+
+    &.sectionOne{
+      background-image: url('/src/images/img01.png');
+      background-size: cover;
+      // height: 50vh;
+      .mainContainer-Service_banner{
+        // background-color: plum;
+        height: 50vh;
+
+        &__icon{
+          // background-color: red;
+          // height: 80%;
+
+        }
+        &__title{
+          // height: 80%;
+          .bannerTitle1{
+
+          }
+        }
+        &__body{
+          // background-color: antiquewhite;
+          // margin-top: 2vw;
+          h3{
+          }
+          h4{
+          }
+          .textoBody{
+          }
+        }
+      }
+    }
+    &.sectionTwo{
+      background-image: url('/src/images/img02.png');
+      background-size: cover;
+      // background-attachment: fixed;
+      .mainContainer-Service_banner{
+        // background-color: aqua;
+        height: 50vh;
+
+        &__icon{
+          // background-color: red;
+        }
+        &__title{
+          // background-color: rgb(248, 248, 255);
+          .bannerTitle2{
+          }
+        }
+        &__body{
+          // background-color: antiquewhite;
+          .mainContainer-Service_articleBox_ab2{
+            // background-color: maroon;
+
+          }
+          .fraseBody{
+          }
+          .invitacionBody{
+          }
+          .emphasis{
+          }
+          .textoBody{
+          }
+
+        }
+      }
+    }
+    &.sectionThree{
+      background-image: url('/src/images/img03.png');
+      background-size: cover;
+      background-position: right;
+      .mainContainer-Service_banner{
+        // background-color: aqua;
+        height: 50vh;
+        &__icon{
+          // background-color: red;
+          font-size: 3rem;
+        }
+        &__title{
+        }
+        &__body{
+          // background-color: antiquewhite;
+          .mainContainer-Service_articleBox_ab3{
+            // background-color: maroon;
+
+          }
+          .fraseBody{
+            span{
+            }
+          }
+          .invitacionBody{
+          }
+
+        }
+      }
+
+    }
+  }
   }
 }
 @include mQ(xlS){
@@ -415,50 +612,49 @@ body{
       // background-color: mediumspringgreen;
     }
     &-Service{
-    background-color: yellowgreen;
 
     &.sectionOne{
-      background-image: url('/src/images/img01.png');
-      background-repeat: no-repeat;
-      background-size: 100%;
+      // background-image: url('/src/images/img01.png');
+      // background-repeat: no-repeat;
+      // background-size: 100%;
       .mainContainer-Service_banner{
         // background-color: olivedrab;
 
         &__icon{
           // background-color: red;
-          margin-left: -2vw;
-          color:$resalte;
-          font-size: 5vw;
-          z-index: 100;
+          // margin-left: -2vw;
+          // color:$resalte;
+          font-size: 5rem;
+          // z-index: 100;
 
         }
         &__title{
-          background-color: $resalte;
-          margin-right: 3vw;
-          margin-bottom: 7%;
-          margin-top: 7%;
+          // background-color: $resalte;
+          // margin-right: 3vw;
+          // margin-bottom: 7%;
+          // margin-top: 7%;
           .bannerTitle1{
-            color: $txtResalte;
+            // color: $txtResalte;
           }
         }
         &__body{
           // background-color: antiquewhite;
           // margin-top: 2vw;
           h4{
-            color: $resalte;
+            // color: $resalte;
             // font-size:2vw;
           }
           .textoBody{
 
-            color: $primario;
+            // color: $primario;
           }
         }
       }
     }
     &.sectionTwo{
-      background-image: url('/src/images/img02.png');
-      background-repeat: no-repeat;
-      background-size: 100%;
+      // background-image: url('/src/images/img02.png');
+      // background-repeat: no-repeat;
+      // background-size: 100%;
       // background-attachment: fixed;
       .mainContainer-Service_banner{
 
@@ -467,18 +663,18 @@ body{
         &__icon{
           // background-color: red;
           // margin-left: -2vw;
-          color:$resalte;
-          font-size: 5vw;
-          z-index: 100;
+          // color:$resalte;
+          font-size: 4rem;
+          // z-index: 100;
         }
         &__title{
           // background-color: rgb(248, 248, 255);
-          background-color: $primario;
+          // background-color: $primario;
           // margin-right: 3vw;
           // margin-bottom: 7%;
           // margin-top: 7%;
           .bannerTitle2{
-            color: $resalte;
+            // color: $resalte;
           }
         }
         &__body{
@@ -489,23 +685,24 @@ body{
           }
           .fraseBody{
             // background-color: palevioletred;
-            font-size: 4vh;
-            color: aliceblue;
+            font-size: 1.5rem;
+            // color: aliceblue;
           }
           .invitacionBody{
             // background-color: yellowgreen;
-            color: $clAlterno;
-            font-size: 5vh;
+            // color: $clAlterno;
+            font-size: 2rem;
           }
           .emphasis{
             // background-color: pink;
-            color: aliceblue;
-            font-style: italic;
-            font-size: 1.5vh;
+            // color: aliceblue;
+            // font-style: italic;
+            font-size: 0.8rem;
           }
           .textoBody{
             // background-color: fuchsia;
-            color: aliceblue;
+            // color: aliceblue;
+            font-size: 1rem;
 
           }
 
@@ -513,23 +710,23 @@ body{
       }
     }
     &.sectionThree{
-      background-image: url('/src/images/img03.png');
-      background-repeat: no-repeat;
-      background-size: 100%;
+      // background-image: url('/src/images/img03.png');
+      // background-repeat: no-repeat;
+      // background-size: 100%;
       // background-attachment: fixed;
       .mainContainer-Service_banner{
 
         // background-color: aqua;
         &__icon{
           // background-color: red;
-          color:$prueba01;
-          font-size: 5vw;
-          z-index: 100;
+          // color:$prueba01;
+          font-size: 4rem;
+          // z-index: 100;
         }
         &__title{
           // background-color: blue;
-          color: $baseredes;
-          font-size: 6vw;
+          // color: $baseredes;
+          // font-size: 6vw;
         }
         &__body{
           // background-color: antiquewhite;
@@ -539,8 +736,8 @@ body{
           }
           .fraseBody{
             // background-color: palevioletred;
-            font-size: 3vh;
-            color: black;
+            // font-size: 3vh;
+            // color: black;
             span{
               color:$baseredes;
               font-size: 3vh
@@ -549,7 +746,7 @@ body{
           .invitacionBody{
             // background-color: yellowgreen;
             color: $baseredes;
-            font-size: 3vw;
+            font-size: 2rem;
           }
 
         }

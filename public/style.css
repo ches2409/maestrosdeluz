@@ -8021,7 +8021,7 @@ h2 {
       font-size: 2.25rem; } }
   @media screen and (min-width: 920px) {
     h2 {
-      font-size: 3.375rem; } }
+      font-size: 2.5rem; } }
 
 h3 {
   font-size: 1.11111rem;
@@ -8945,76 +8945,68 @@ body {
   .mainContainer-contact .box-text {
     color: #899d12; }
     .mainContainer-contact .box-text p {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+  .mainContainer-Service.sectionOne {
+    background-image: url("/src/images/img01_600.png"); }
+  .mainContainer-Service.sectionTwo {
+    background-image: url("/src/images/img02_600.png"); }
+  .mainContainer-Service.sectionThree {
+    background-image: url("/src/images/img03_600.png"); }
+    .mainContainer-Service.sectionThree .mainContainer-Service_banner__icon {
+      font-size: 3rem; }
+    .mainContainer-Service.sectionThree .mainContainer-Service_banner__title {
+      color: #981914;
+      font-size: 1.8rem; }
+    .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .fraseBody {
+      margin: 3.5rem 0.5rem;
+      font-size: 1.5rem; }
+      .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .fraseBody span {
+        font-size: 1.5rem; }
+    .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .invitacionBody {
+      font-size: 1.5rem; } }
 
 @media screen and (min-width: 760px) {
   .mainContainer-head__icon i.fa {
     font-size: 2.5rem; } }
 
-@media screen and (min-width: 1200px) {
-  .mainContainer-Service {
-    background-color: yellowgreen; }
-    .mainContainer-Service.sectionOne {
-      background-image: url("/src/images/img01.png");
-      background-repeat: no-repeat;
-      background-size: 100%; }
-      .mainContainer-Service.sectionOne .mainContainer-Service_banner__icon {
-        margin-left: -2vw;
-        color: #899d12;
-        font-size: 5vw;
-        z-index: 100; }
-      .mainContainer-Service.sectionOne .mainContainer-Service_banner__title {
-        background-color: #899d12;
-        margin-right: 3vw;
-        margin-bottom: 7%;
-        margin-top: 7%; }
-        .mainContainer-Service.sectionOne .mainContainer-Service_banner__title .bannerTitle1 {
-          color: #682917; }
-      .mainContainer-Service.sectionOne .mainContainer-Service_banner__body h4 {
-        color: #899d12; }
-      .mainContainer-Service.sectionOne .mainContainer-Service_banner__body .textoBody {
-        color: #efefef; }
-    .mainContainer-Service.sectionTwo {
-      background-image: url("/src/images/img02.png");
-      background-repeat: no-repeat;
-      background-size: 100%; }
-      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__icon {
-        color: #899d12;
-        font-size: 5vw;
-        z-index: 100; }
-      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__title {
-        background-color: #efefef; }
-        .mainContainer-Service.sectionTwo .mainContainer-Service_banner__title .bannerTitle2 {
-          color: #899d12; }
-      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .fraseBody {
-        font-size: 4vh;
-        color: aliceblue; }
-      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .invitacionBody {
-        color: #f1ca08;
-        font-size: 5vh; }
-      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .emphasis {
-        color: aliceblue;
-        font-style: italic;
-        font-size: 1.5vh; }
-      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .textoBody {
-        color: aliceblue; }
-    .mainContainer-Service.sectionThree {
-      background-image: url("/src/images/img03.png");
-      background-repeat: no-repeat;
-      background-size: 100%; }
+@media screen and (min-width: 990px) {
+  .mainContainer-Service.sectionOne {
+    background-image: url("/src/images/img01.png");
+    background-size: cover; }
+    .mainContainer-Service.sectionOne .mainContainer-Service_banner {
+      height: 50vh; }
+  .mainContainer-Service.sectionTwo {
+    background-image: url("/src/images/img02.png");
+    background-size: cover; }
+    .mainContainer-Service.sectionTwo .mainContainer-Service_banner {
+      height: 50vh; }
+  .mainContainer-Service.sectionThree {
+    background-image: url("/src/images/img03.png");
+    background-size: cover;
+    background-position: right; }
+    .mainContainer-Service.sectionThree .mainContainer-Service_banner {
+      height: 50vh; }
       .mainContainer-Service.sectionThree .mainContainer-Service_banner__icon {
-        color: #0C0C0C;
-        font-size: 5vw;
-        z-index: 100; }
-      .mainContainer-Service.sectionThree .mainContainer-Service_banner__title {
-        color: #981914;
-        font-size: 6vw; }
-      .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .fraseBody {
-        font-size: 3vh;
-        color: black; }
-        .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .fraseBody span {
-          color: #981914;
-          font-size: 3vh; }
-      .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .invitacionBody {
-        color: #981914;
-        font-size: 3vw; } }
+        font-size: 3rem; } }
+
+@media screen and (min-width: 1200px) {
+  .mainContainer-Service.sectionOne .mainContainer-Service_banner__icon {
+    font-size: 5rem; }
+  .mainContainer-Service.sectionTwo .mainContainer-Service_banner__icon {
+    font-size: 4rem; }
+  .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .fraseBody {
+    font-size: 1.5rem; }
+  .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .invitacionBody {
+    font-size: 2rem; }
+  .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .emphasis {
+    font-size: 0.8rem; }
+  .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .textoBody {
+    font-size: 1rem; }
+  .mainContainer-Service.sectionThree .mainContainer-Service_banner__icon {
+    font-size: 4rem; }
+  .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .fraseBody span {
+    color: #981914;
+    font-size: 3vh; }
+  .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .invitacionBody {
+    color: #981914;
+    font-size: 2rem; } }
