@@ -3,17 +3,13 @@ block config
 
 include metatags_webapp.pug
 include ./components/navigation_off_canvas.pug
-include ./components/menu_social.pug
 include ./components/contacto.pug
-//- include ./components/header_title.pug
-//- include ./components/title_pack.pug
-//- include ./components/title_links.pug
-//- include ./components/modal.pug
-//- include ./components/box_info.pug
-//- include ./components/ligth_box.pug
-//- include ./components/box_info_images.pug
-//- include ./components/galeria.pug
-
+include ./components/picture_webp.pug
+include ./components/slid.pug
+include ./components/slid/slidImg.pug
+include ./components/slid/slidTitle.pug
+include ./components/slid/slidDescrip.pug
+include ./components/slid/slidControl.pug
 
 doctype html
 html(lang='es')
@@ -26,8 +22,8 @@ html(lang='es')
     title #{pageTitle} | #{siteTitle}
     meta(name="description" content=description)
     meta(name="application-name", content=siteTitle)
-    link(rel="stylesheet", href="./styles.css")
-    link(rel="stylesheet", href="/src/scss/vendors/animate.css")
+    link(rel="stylesheet", href="./style.css")
+    //- link(rel="stylesheet", href="/src/scss/vendors/animate.css")
   body
     +navigationOffCanvas([
       [pages[0], sites[0], ''],

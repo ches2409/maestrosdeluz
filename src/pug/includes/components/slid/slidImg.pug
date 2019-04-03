@@ -1,0 +1,5 @@
+-imgPath='/src/images/'
+mixin slidImg(imagenes)
+  each item in imagenes
+    .item-image-container
+      img.item-image(src=imgPath+`${item[0]}`+".jpg")

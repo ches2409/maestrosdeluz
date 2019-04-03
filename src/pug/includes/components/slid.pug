@@ -1,0 +1,42 @@
+-imgPath='/src/images/'
+-numeracion=1
+-imagenes=["1","2","3","4"]
+mixin slid()
+  .content-width
+        .slideshow
+          <!-- Slideshow Items -->
+          .slideshow-items
+            .item
+              +slidImg("1")
+              +slidTitle(
+                ["A","m","a","r","r","e","s"]
+              )
+              +slidDescrip(
+                [("Si"), ("lo"), ("que"), ("buscas"), ("es"), ("conquistar,"), ("o"), ("recuperar"), ("el"), ("amor"), ("de tu"), ("pareja"), ("o esa"), ("persona"), ("que"), ("tanto"), ("deseas,"), ("¡Felicidades!"), ("entonces"), ("estás"), ("en el"), ("lugar"), ("correcto,"), ("aquí"), ("conseguirás"), ("los más"), ("poderosos"), ("amarres"), ("de amor,"), ("Nosotros"), ("te"), ("daremos"), ("una buena"), ("cantidad"), ("de soluciones"), ("para que"), ("logres"), ("que esa"), ("persona"), ("te amé por"), ("siempre"), ("y para"), ("siempre.")]
+              )
+            .item
+              +slidImg("2")
+              +slidTitle(
+                ["R","i","t","u","a","l","e","s"]
+              )
+              +slidDescrip(
+                [("Seciones poderosas"), ("realizadas por"), ("uno de nuestros"), ("hermanos"), ("de la"), ("comunidad"), ("segun sea la"), ("necesidad"), ("de la"), ("persona.")]
+              )
+            .item
+              +slidImg("3")
+              +slidTitle(
+                ["A","l","t","a","r","e","s"]
+              )
+              +slidDescrip(
+                [("Secciones"), ("espirituales"), ("especiales"), ("de la hermandad,"), ("dedicadas"), ("por un determinado"), ("tiempo a la"), ("petición o"), ("necesidad"), ("de la"), ("persona.")]
+              )
+            .item
+              +slidImg("4")
+              +slidTitle(
+                ["L","i","m","p","i","e","z","a","s"]
+              )
+              +slidDescrip(
+                [("Rituales"), ("especializados"), ("destinados"), ("a mejorar"), ("aspectos"), ("en la vida"), ("o quitar"), ("trabajos"), ("realizados"), ("anteriormente"), ("por otras"), ("personas.")]
+              )
+
+        +slidControl(["1", "2", "3","4"])

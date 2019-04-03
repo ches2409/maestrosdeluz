@@ -62,7 +62,10 @@
     "uncss": "^0.15.0",
     "watchify": "^3.11.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "wowjs": "^1.1.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codigocreativoing/aterrizajeV2.1.git"

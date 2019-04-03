@@ -1,6 +1,5 @@
 .heroWrap-infoContacto{
   // background-color: pink;
-
   &_contact{
   // background-color: red;
   padding: 0.7vw;
@@ -8,33 +7,35 @@
     .title{
       // background-color: orangered;
       @include centerFlex();
+      font-size: 0.7rem;
     }
     .subtitle{
       // background-color: darkcyan;
       @include centerFlex();
+      font-size: 0.7rem;
     }
     .numbers{
       .numbers-phone1{
         // background-color: rosybrown;
         @include centerFlex();
         color: $clAlterno;
-        font-size: 1vw;
-        i{
-          margin-left: 0.7vw;
-        }
+        font-size: 0.7rem;
       }
       .numbers-phone2{
         // background-color: bisque;
         @include centerFlex();
         margin: 0.5vw;
-        font-size: 1.5vw;
+        font-size: 0.8rem;
+        i{
+          margin-left: 0.5rem;
+        }
 
       }
     }
     .boton{
       // background-color: lawngreen;
       // color: $resalte;
-      font-size: 2vw;
+      font-size: 1rem;
       @include centerFlex();
       a{
         color: $resalte;
@@ -44,3 +45,105 @@
     }
   }
 }
+
+
+
+@include mQ(xsS){
+  .heroWrap-infoContacto{
+  // background-color: pink;
+    &_contact{
+      // background-color: red;
+    }
+  }
+}
+@include mQ(smallS){
+  .heroWrap-infoContacto{
+  // background-color: pink;
+    &_contact{
+      // background-color: blue;
+      .title{
+        font-size: 0.8rem;
+      }
+      .subtitle{
+        font-size: 0.8rem;
+      }
+      .numbers{
+        .numbers-phone1{
+          // background-color: rosybrown;
+          font-size: 1rem;
+        }
+        .numbers-phone2{
+          // background-color: bisque;
+          margin: 0.5vw;
+          font-size: 1rem;
+          i{
+            margin-left: 0.5rem;
+          }
+        }
+      }
+      .boton{
+      // background-color: lawngreen;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@include mQ(mediumS){
+  .heroWrap-infoContacto{
+  // background-color: pink;
+    &_contact{
+      // background-color: pink;
+      .title{
+        font-size: 1rem;
+      }
+      .subtitle{
+        font-size: 1rem;
+      }
+    }
+  }
+}
+@include mQ(wideS){
+  .heroWrap-infoContacto{
+  // background-color: pink;
+    &_contact{
+      // background-color: green;
+    }
+  }
+}
+@include mQ(largeS){
+  .heroWrap-infoContacto{
+  // background-color: pink;
+    &_contact{
+      // background-color: royalblue;
+    }
+  }
+}
+@include mQ(xlS){
+  .heroWrap-infoContacto{
+  // background-color: pink;
+  &_contact{
+  // background-color: mediumspringgreen;
+    .title{
+    }
+    .subtitle{
+    }
+    .numbers{
+      .numbers-phone1{
+        // background-color: rosybrown;
+        font-size: 1.2rem;
+      }
+      .numbers-phone2{
+        // background-color: bisque;
+        font-size: 1.5vw;
+
+      }
+    }
+    .boton{
+      // background-color: lawngreen;
+      // color: $resalte;
+      font-size: 2rem;
+    }
+  }
+}
+}
+
