@@ -8089,12 +8089,13 @@ a {
   grid-template-rows: 15% 75% 10%; }
 
 .mainContainer-head {
+  margin-top: 0.5rem;
   grid-row: 1 / 2;
   display: flex;
   justify-content: center;
   align-items: center; }
   .mainContainer-head__icon {
-    margin-right: 0.5vw; }
+    margin-right: 0.5rem; }
 
 .mainContainer-boxA {
   grid-row: 2 / 3;
@@ -8114,7 +8115,7 @@ a {
     align-items: center; }
 
 .mainContainer-Service.sectionOne .mainContainer-Service_banner {
-  height: 50vh;
+  height: 60vh;
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 40% 60%;
@@ -8142,7 +8143,7 @@ a {
     text-align: center; }
 
 .mainContainer-Service.sectionTwo .mainContainer-Service_banner {
-  height: 50vh;
+  height: 60vh;
   display: grid;
   grid-template-columns: 35% 65%;
   grid-template-rows: 30% 70%;
@@ -8187,7 +8188,7 @@ a {
       grid-row: 4 / 5; }
 
 .mainContainer-Service.sectionThree .mainContainer-Service_banner {
-  height: 60vh;
+  height: 70vh;
   display: grid;
   grid-template-rows: 10% 20% 70%;
   justify-content: center;
@@ -8219,7 +8220,6 @@ a {
       grid-row: 2 / 3; }
 
 .containerInvit {
-  width: 100vw;
   height: 15vh;
   display: grid;
   justify-content: center;
@@ -8283,7 +8283,9 @@ a {
     text-align: center;
     width: 100%; }
   .containerPromotion_squareWs {
-    width: 100%; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .containerPromotion_squareWs .squareWs {
       display: flex;
       justify-content: center;
@@ -8775,154 +8777,244 @@ body {
   background-color: #0C0C0C; }
 
 .mainContainer-head__icon i.fa {
-  margin-top: 5vw;
   color: #899d12;
-  font-size: 2.5vw; }
+  font-size: 2rem; }
 
 .mainContainer-head__title {
-  margin-top: 5vw;
   color: #899d12; }
 
 .mainContainer-boxA {
   color: #efefef;
-  margin: 0 2vw;
-  display: grid;
-  text-align: center;
-  justify-content: center;
-  align-content: center; }
+  margin: 0 2vw; }
   .mainContainer-boxA span {
     color: #f1ca08; }
 
 .mainContainer-contact .box {
-  padding: 0.5vw;
+  padding: 0.1rem 1rem;
   border: 0.1vw solid #899d12; }
   .mainContainer-contact .box-icon {
     color: #899d12;
-    font-size: 2.5vw; }
+    margin-right: 0.5rem;
+    font-size: 1rem; }
   .mainContainer-contact .box-text {
     color: #899d12; }
     .mainContainer-contact .box-text p {
-      font-size: 1.2vw; }
+      font-size: 1rem; }
 
-.mainContainer-Service.sectionOne {
-  background-image: url("/src/images/img01.png");
-  background-repeat: no-repeat;
-  background-size: 100%; }
-  .mainContainer-Service.sectionOne .mainContainer-Service_banner__icon {
-    margin-left: -2vw;
-    color: #899d12;
-    font-size: 5vw;
-    z-index: 100; }
-  .mainContainer-Service.sectionOne .mainContainer-Service_banner__title {
-    background-color: #899d12;
-    margin-right: 3vw;
-    margin-bottom: 7%;
-    margin-top: 7%; }
-    .mainContainer-Service.sectionOne .mainContainer-Service_banner__title .bannerTitle1 {
-      color: #682917; }
-  .mainContainer-Service.sectionOne .mainContainer-Service_banner__body h4 {
-    color: #899d12; }
-  .mainContainer-Service.sectionOne .mainContainer-Service_banner__body .textoBody {
-    color: #efefef; }
-
-.mainContainer-Service.sectionTwo {
-  background-image: url("/src/images/img02.png");
-  background-repeat: no-repeat;
-  background-size: 100%; }
-  .mainContainer-Service.sectionTwo .mainContainer-Service_banner__icon {
-    color: #899d12;
-    font-size: 5vw;
-    z-index: 100; }
-  .mainContainer-Service.sectionTwo .mainContainer-Service_banner__title {
-    background-color: #efefef; }
-    .mainContainer-Service.sectionTwo .mainContainer-Service_banner__title .bannerTitle2 {
+.mainContainer-Service {
+  background-color: yellowgreen; }
+  .mainContainer-Service.sectionOne {
+    background-image: url("/src/images/img01_320.png");
+    background-repeat: no-repeat;
+    background-size: 100%; }
+    .mainContainer-Service.sectionOne .mainContainer-Service_banner__icon {
+      height: 60%;
+      margin-left: 1rem;
+      color: #899d12;
+      font-size: 2.5rem;
+      z-index: 100; }
+    .mainContainer-Service.sectionOne .mainContainer-Service_banner__title {
+      background-color: #899d12;
+      height: 60%;
+      padding-right: 0.5rem; }
+      .mainContainer-Service.sectionOne .mainContainer-Service_banner__title .bannerTitle1 {
+        color: #682917; }
+    .mainContainer-Service.sectionOne .mainContainer-Service_banner__body h3 {
+      color: aliceblue; }
+    .mainContainer-Service.sectionOne .mainContainer-Service_banner__body h4 {
       color: #899d12; }
-  .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .fraseBody {
-    font-size: 4vh;
-    color: aliceblue; }
-  .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .invitacionBody {
-    color: #f1ca08;
-    font-size: 5vh; }
-  .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .emphasis {
-    color: aliceblue;
-    font-style: italic;
-    font-size: 1.5vh; }
-  .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .textoBody {
-    color: aliceblue; }
-
-.mainContainer-Service.sectionThree {
-  background-image: url("/src/images/img03.png");
-  background-repeat: no-repeat;
-  background-size: 100%; }
-  .mainContainer-Service.sectionThree .mainContainer-Service_banner__icon {
-    color: #0C0C0C;
-    font-size: 5vw;
-    z-index: 100; }
-  .mainContainer-Service.sectionThree .mainContainer-Service_banner__title {
-    color: #981914;
-    font-size: 6vw; }
-  .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .fraseBody {
-    font-size: 3vh;
-    color: black; }
-    .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .fraseBody span {
+    .mainContainer-Service.sectionOne .mainContainer-Service_banner__body .textoBody {
+      color: #efefef; }
+  .mainContainer-Service.sectionTwo {
+    background-image: url("/src/images/img02_320.png");
+    background-repeat: no-repeat;
+    background-size: 100%; }
+    .mainContainer-Service.sectionTwo .mainContainer-Service_banner__icon {
+      height: 60%;
+      margin-right: 1rem;
+      color: #899d12;
+      font-size: 2.5rem;
+      z-index: 100; }
+    .mainContainer-Service.sectionTwo .mainContainer-Service_banner__title {
+      height: 60%;
+      padding-left: 0.5rem;
+      background-color: #efefef; }
+      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__title .bannerTitle2 {
+        color: #899d12; }
+    .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .fraseBody {
+      font-size: 1rem;
+      color: aliceblue; }
+    .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .invitacionBody {
+      color: #f1ca08;
+      font-size: 1.3rem; }
+    .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .emphasis {
+      color: aliceblue;
+      font-style: italic;
+      font-size: 0.7rem; }
+    .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .textoBody {
+      color: aliceblue;
+      font-size: 0.9rem; }
+  .mainContainer-Service.sectionThree {
+    background-image: url("/src/images/img03_320.png");
+    background-repeat: no-repeat;
+    background-size: 100%; }
+    .mainContainer-Service.sectionThree .mainContainer-Service_banner__icon {
+      color: #0C0C0C;
+      font-size: 2.5rem;
+      z-index: 100; }
+    .mainContainer-Service.sectionThree .mainContainer-Service_banner__title {
       color: #981914;
-      font-size: 3vh; }
-  .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .invitacionBody {
-    color: #981914;
-    font-size: 3vw; }
+      font-size: 1.5rem; }
+    .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .fraseBody {
+      background-color: rgba(240, 248, 255, 0.4);
+      margin: 1.5rem 0;
+      font-size: 1rem;
+      color: black; }
+      .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .fraseBody span {
+        color: #981914;
+        font-size: 1rem; }
+    .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .invitacionBody {
+      color: #f1ca08;
+      font-size: 1rem; }
 
 .containerInvit_square {
-  padding: 1.5vw;
-  border: 0.3vw solid #899d12; }
+  padding: 1rem;
+  border: 0.2rem solid #899d12; }
 
 .containerInvit_consulta {
   color: #899d12;
-  font-size: 2vw; }
+  font-size: 1rem; }
 
 .containerServices {
-  background-image: url("/src/images/fondoUs.jpg"); }
+  background-image: url("/src/images/fondoUs.jpg");
+  background-position: center; }
   .containerServices_box {
     background-color: rgba(44, 43, 43, 0.7); }
     .containerServices_box__title {
       color: aliceblue; }
     .containerServices_box__body .servicesBox_icon {
       color: #899d12;
-      font-size: 3.5vw; }
+      font-size: 1.5rem; }
     .containerServices_box__body .servicesBox_title .sbT {
       color: #f1ca08; }
     .containerServices_box__body .servicesBox_text {
-      color: aliceblue; }
+      color: aliceblue;
+      font-size: 0.7rem; }
 
 .containerDetail_title .titleMain {
+  font-size: 1.2rem;
   color: aliceblue; }
 
 .containerDetail .form .contact {
-  padding: 1.2vw;
-  border: 0.1vw solid #f1ca08;
+  padding: 0.5rem;
+  border: 0.1rem solid #f1ca08;
   color: #f1ca08;
-  font-size: 2vw; }
+  font-size: 1rem; }
   .containerDetail .form .contact a {
     list-style: none;
     text-decoration: none; }
 
 .containerPromotion {
-  margin-top: 2vw;
+  margin-top: 1rem;
   background-color: #981914; }
   .containerPromotion_title .titleEnd {
     color: aliceblue; }
   .containerPromotion_squareWs {
-    margin: 1vw;
-    padding: 1vw;
-    border: .3vw solid aliceblue; }
+    padding: 0.5rem;
+    border: 0.1rem solid aliceblue; }
+    .containerPromotion_squareWs i {
+      color: aliceblue;
+      margin-right: 0.5rem;
+      font-size: 1.5rem; }
     .containerPromotion_squareWs .txtWs {
       color: aliceblue;
-      font-size: 1.5vw; }
+      font-size: 1rem; }
 
 .footer-Text {
   color: aliceblue; }
   .footer-Text p {
-    font-size: 1.5vw; }
+    font-size: 1rem; }
 
 .footer-Head {
   margin: 1.5vw;
   color: #899d12; }
+
+@media screen and (min-width: 600px) {
+  .mainContainer-contact .box-icon {
+    font-size: 1.2rem; }
+  .mainContainer-contact .box-text {
+    color: #899d12; }
+    .mainContainer-contact .box-text p {
+      font-size: 1.2rem; } }
+
+@media screen and (min-width: 760px) {
+  .mainContainer-head__icon i.fa {
+    font-size: 2.5rem; } }
+
+@media screen and (min-width: 1200px) {
+  .mainContainer-Service {
+    background-color: yellowgreen; }
+    .mainContainer-Service.sectionOne {
+      background-image: url("/src/images/img01.png");
+      background-repeat: no-repeat;
+      background-size: 100%; }
+      .mainContainer-Service.sectionOne .mainContainer-Service_banner__icon {
+        margin-left: -2vw;
+        color: #899d12;
+        font-size: 5vw;
+        z-index: 100; }
+      .mainContainer-Service.sectionOne .mainContainer-Service_banner__title {
+        background-color: #899d12;
+        margin-right: 3vw;
+        margin-bottom: 7%;
+        margin-top: 7%; }
+        .mainContainer-Service.sectionOne .mainContainer-Service_banner__title .bannerTitle1 {
+          color: #682917; }
+      .mainContainer-Service.sectionOne .mainContainer-Service_banner__body h4 {
+        color: #899d12; }
+      .mainContainer-Service.sectionOne .mainContainer-Service_banner__body .textoBody {
+        color: #efefef; }
+    .mainContainer-Service.sectionTwo {
+      background-image: url("/src/images/img02.png");
+      background-repeat: no-repeat;
+      background-size: 100%; }
+      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__icon {
+        color: #899d12;
+        font-size: 5vw;
+        z-index: 100; }
+      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__title {
+        background-color: #efefef; }
+        .mainContainer-Service.sectionTwo .mainContainer-Service_banner__title .bannerTitle2 {
+          color: #899d12; }
+      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .fraseBody {
+        font-size: 4vh;
+        color: aliceblue; }
+      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .invitacionBody {
+        color: #f1ca08;
+        font-size: 5vh; }
+      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .emphasis {
+        color: aliceblue;
+        font-style: italic;
+        font-size: 1.5vh; }
+      .mainContainer-Service.sectionTwo .mainContainer-Service_banner__body .textoBody {
+        color: aliceblue; }
+    .mainContainer-Service.sectionThree {
+      background-image: url("/src/images/img03.png");
+      background-repeat: no-repeat;
+      background-size: 100%; }
+      .mainContainer-Service.sectionThree .mainContainer-Service_banner__icon {
+        color: #0C0C0C;
+        font-size: 5vw;
+        z-index: 100; }
+      .mainContainer-Service.sectionThree .mainContainer-Service_banner__title {
+        color: #981914;
+        font-size: 6vw; }
+      .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .fraseBody {
+        font-size: 3vh;
+        color: black; }
+        .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .fraseBody span {
+          color: #981914;
+          font-size: 3vh; }
+      .mainContainer-Service.sectionThree .mainContainer-Service_banner__body .invitacionBody {
+        color: #981914;
+        font-size: 3vw; } }

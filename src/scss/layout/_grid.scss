@@ -39,11 +39,12 @@
   }
   &-head{
     // background-color: blueviolet;
+    margin-top: 0.5rem;
     grid-row: 1 / 2;
     @include centerFlex();
     &__icon{
       // background-color: palevioletred;
-      margin-right: 0.5vw;
+      margin-right: 0.5rem;
       // grid-column: 1 / 2;
       // display: flex;
       // display: grid;
@@ -99,7 +100,7 @@
     &.sectionOne{
       .mainContainer-Service_banner{
         // background-color: olivedrab;
-        height: 50vh;
+        height: 60vh;
         // width: 100vw;
         // padding-top: 2vh;
         display: grid;
@@ -169,7 +170,7 @@
     }
     &.sectionTwo{
       .mainContainer-Service_banner{
-        height: 50vh;
+        height: 60vh;
         // width: 100vw;
         // padding-top: 2vh;
         // background-color: aqua;
@@ -250,7 +251,7 @@
     }
     &.sectionThree{
       .mainContainer-Service_banner{
-        height: 60vh;
+        height: 70vh;
         // padding-top: 2vh;
         // background-color: aqua;
         display: grid;
@@ -311,7 +312,7 @@
 }
 .containerInvit{
   // background-color: blueviolet;
-  width: 100vw;
+  // width: 100vw;
   height: 15vh;
   display: grid;
   justify-content: center;
@@ -427,7 +428,8 @@
   }
   &_squareWs{
     // background-color: violet;
-    width: 100%;
+    // width: 100%;
+    @include centerFlex();
     .squareWs{
       // background-color: yellow;
       @include centerFlex();
