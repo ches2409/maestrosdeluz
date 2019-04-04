@@ -513,6 +513,16 @@ body{
     }
   }
   }
+  .containerDetail{
+  // background-color: cornflowerblue;
+
+    &_title{
+      .titleMain{
+        // background-color: magenta;
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 @include mQ(wideS){
   .mainContainer{
@@ -564,6 +574,16 @@ body{
       }
     }
   }
+  }
+  .containerDetail{
+  // background-color: cornflowerblue;
+
+    &_title{
+      .titleMain{
+        // background-color: blue;
+        font-size: 1.7rem;
+      }
+    }
   }
 }
 @include mQ(largeS){
@@ -703,6 +723,16 @@ body{
       }
     }
   }
+  }
+  .containerDetail{
+  // background-color: cornflowerblue;
+
+    &_title{
+      .titleMain{
+        // background-color: blueviolet;
+        font-size: 1.9rem;
+      }
+    }
   }
 }
 @include mQ(xlS){
@@ -885,5 +915,15 @@ body{
       }
     }
   }
+  }
+  .containerDetail{
+  // background-color: cornflowerblue;
+
+    &_title{
+      .titleMain{
+        // background-color: mediumvioletred;
+        font-size: 2.5rem;
+      }
+    }
   }
 }
