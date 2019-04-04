@@ -2,16 +2,16 @@ main.mainContainer
   section#nuestro_Equipo.mainContainer-sectionUs.u-firstContent
     .mainContainer-head
       .mainContainer-head__icon
-        i.fa.fa-users
+        i.fa.fa-users.wow.bounceIn(data-wow-delay="0.6s")
       .mainContainer-head__title
-        h2.titleUs.wow.pulse Nuestro Equipo
+        h2.titleUs.wow.bounceInRight Nuestro Equipo
     .mainContainer-boxA
       article.mainContainer-boxA__body.b1
         p.mainContainer-boxA__text1 #[span Somos una hermandad espiritual experimentados en trabajos con: ] Magia Blanca, Santería, Amarres , dominación de pareja, rituales de protección.
         p Realizamos endulzamientos, conjuros de prosperidad, le alejamos a las personas no deseadas y los  amantes obsesionados, construimos altares de #[span.resInterno protección y prosperidad]. Nuestra Hermandad esta siempre dispuesta a escuchar y ayudar en todos tus #[span.resInterno problemas económicos] y emocionales, Seremos la mano amiga en tus momentos difíciles y el #[span.resInterno consejo oportuno] en tus decisiones trascendentales.
         p Nos une el propósito de ayudar en el duro camino de la vida hacia la #[span.resInterno felicidad] y la #[span.resInterno estabilidad].
     .mainContainer-contact
-      .box
+      .box.wow.pulse(data-wow-iteration="10")
         .box-icon
           i.fab.fa-whatsapp
         .box-text
@@ -19,23 +19,23 @@ main.mainContainer
   section.mainContainer-Service.sectionOne
     .mainContainer-Service_banner
       .mainContainer-Service_banner__icon
-        i.fa.fa-heartbeat
+        i.fa.fa-heartbeat.wow.bounceIn(data-wow-delay="0.6s")
       .mainContainer-Service_banner__title
-        h2.bannerTitle1.animated.pulse ¿Sufriendo por Amor?
+        h2.bannerTitle1.wow.bounceInLeft ¿Sufriendo por Amor?
       .mainContainer-Service_banner__body
 
-        article.mainContainer-Service_articleBox_ab1
+        article.mainContainer-Service_articleBox_ab1.wow.zoomIn
           h3.fraseBody Pare de sufrir ahora
           h4.invitacionBody Comunícate GRATIS con nosotros!
           p.textoBody Le retornamos a su amor perdido a través de amarres, hacemos que regrese a usted de manera natural.
   section.mainContainer-Service.sectionTwo
     .mainContainer-Service_banner
       .mainContainer-Service_banner__icon
-        i.fa.fa-dollar-sign
+        i.fa.fa-dollar-sign.wow.bounceIn(data-wow-delay="0.6s")
       .mainContainer-Service_banner__title
-        h2.bannerTitle2.animated.pulse ¿Tu vida no tiene sentido?
+        h2.bannerTitle2.wow.bounceInRight ¿Tu vida no tiene sentido?
       .mainContainer-Service_banner__body
-        article.mainContainer-Service_articleBox_ab2
+        article.mainContainer-Service_articleBox_ab2.wow.zoomIn
           h3.fraseBody Es hora de hacer un cambio en tu vida
           h4.invitacionBody Toma hoy esa decisión!
           p.emphasis Sientes como tu vida día a día sigue un rumbo sin sentido y doloroso, vez amargamente como tu economía no fluye.
@@ -43,16 +43,16 @@ main.mainContainer
   section.mainContainer-Service.sectionThree
     .mainContainer-Service_banner
       .mainContainer-Service_banner__icon
-        i.fa.fa-heart
+        i.fa.fa-heart.wow.zoomIn
       .mainContainer-Service_banner__title
-        h2.bannerTitle3.animated.pulse ¿Nada te sale bien?
+        h2.bannerTitle3.wow.bounceInDown(data-wow-delay="0.3s") ¿Nada te sale bien?
       .mainContainer-Service_banner__body
         article.mainContainer-Service_articleBox_ab3
           .fraseBody
             p Con los #[span.resTitulo Maestros de la luz] por fín encontrarás esa solución que te parecía imposible.
-          h4.invitacionBody ¡Solo anímate a dar el primer paso!
+          h4.invitacionBody.wow.pulse(data-wow-iteration="10") ¡Solo anímate a dar el primer paso!
   section.containerInvit
-    .containerInvit_square
+    .containerInvit_square.wow.flash(data-wow-iteration="10", data-wow-duration="2s")
       p.containerInvit_consulta Primera consulta gratis
   section#lo_que_hacemos.containerServices
     .containerServices_box
@@ -62,28 +62,28 @@ main.mainContainer
         .servicesBox_icon.sbIcon1
           i.fa.fa-venus-mars
         .servicesBox_title
-          h3.sbT Amarres de Amor
+          h3.sbT.wow.rubberBand Amarres de Amor
         .servicesBox_text
           p No sufra más en silencio, resultados garantizados.
       .containerServices_box__body.sb2
         .servicesBox_icon.sbIcon2
           i.fa.fa-plus-square
         .servicesBox_title
-          h3.sbT Magia Blanca y Santería
+          h3.sbT.wow.rubberBand(data-wow-delay="0.5s") Magia Blanca y Santería
         .servicesBox_text
           p Rituales Poderosos para alcanzar tu felicidad.
       .containerServices_box__body.sb3
         .servicesBox_icon.sbIcon3
           i.fa.fa-heartbeat
         .servicesBox_title
-          h3.sbT Regreso del ser amado
+          h3.sbT.wow.rubberBand Regreso del ser amado
         .servicesBox_text
           p Triunfo donde la mayoría fracasa.
       .containerServices_box__body.sb4
         .servicesBox_icon.sbIcon3
           i.fa.fa-dollar-sign
         .servicesBox_title
-          h3.sbT Altares de Prosperidad
+          h3.sbT.wow.rubberBand(data-wow-delay="0.5s") Altares de Prosperidad
         .servicesBox_text
           p Poderosos altares con excelentes resultados.
   section#contacto.containerDetail
@@ -97,7 +97,7 @@ main.mainContainer
   section.containerPromotion
     .containerPromotion_title
       H3.titleEnd ¡Consulta personalizada y confidencial!
-    .containerPromotion_squareWs
+    .containerPromotion_squareWs.wow.flash(data-wow-iteration="10", data-wow-duration="2s")
       .squareWs
         i.fab.fa-whatsapp
         p.txtWs=celContact

@@ -23,7 +23,6 @@ html(lang='es')
     meta(name="description" content=description)
     meta(name="application-name", content=siteTitle)
     link(rel="stylesheet", href="./style.css")
-    //- link(rel="stylesheet", href="/src/scss/vendors/animate.css")
   body
     +navigationOffCanvas([
       [pages[0], sites[0], ''],
@@ -31,20 +30,8 @@ html(lang='es')
       [pages[2], sites[2], ''],
       [pages[3], sites[3], '']
     ] )
-    //- +social([
-    //-   ['portafolio.html', 'briefcase', ''],
-    //-   ['https://www.facebook.com/codigocreativoing', 'facebook-f', 'blanck'],
-    //-   ['https://twitter.com/creativecodeing?lang=es', 'twitter', 'blanck'],
-    //-   ['https://www.instagram.com/codigocreativoing/', 'instagram', 'blanck'],
-    //-   ['https://www.linkedin.com/company/codigocreativoing/', 'linkedin', 'blanck'],
-    //-   ['https://www.pinterest.es/codigocreativoing/', 'pinterest', 'blanck']
-    //- ])
-    //- +links([
-    //-   [services[0], serviceSites[0], "images/"+servicesImg[0]],
-    //-   [services[1], serviceSites[1], servicesImg[1]],
-    //-   [services[2], serviceSites[2], servicesImg[2]],
-    //-   [services[3], serviceSites[3], servicesImg[3]],
-    //- ])
     block content
 
     script(src="./script.js")
+    script(src="/node_modules/wowjs/dist/wow.min.js")
+    script new WOW().init();

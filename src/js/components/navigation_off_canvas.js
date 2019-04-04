@@ -1,4 +1,4 @@
-// import Hammer from 'hammerjs'
+import Hammer from 'hammerjs'
 
 export default function navigationOffCanvas() {
   const d = document,
@@ -6,9 +6,9 @@ export default function navigationOffCanvas() {
     panel = d.querySelector('.Panel'),
     panelBtn = d.querySelector('.Panel-button'),
     mq = w.matchMedia('(min-width: 64em)'),
-    hamburger = d.querySelector('.hamburger')
-    // hammerBody = new Hammer(d.body),
-    // hammerPanel = new Hammer(panel)
+    hamburger = d.querySelector('.hamburger'),
+    hammerBody = new Hammer(d.body),
+    hammerPanel = new Hammer(panel)
 
   function closePanel(mq) {
     if (mq.matches) {
@@ -36,6 +36,6 @@ export default function navigationOffCanvas() {
   mq.addListener(closePanel)
   closePanel(mq)
 
-  // hammerPanel.on('swipeleft  swiperight', hammerTouches)
-  // hammerBody.on('swipeleft  swiperight', hammerTouches)
+  hammerPanel.on('swipeleft  swiperight', hammerTouches)
+  hammerBody.on('swipeleft  swiperight', hammerTouches)
 }

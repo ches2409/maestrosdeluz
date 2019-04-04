@@ -274,15 +274,19 @@ body{
   }
   .form{
     // background-color: royalblue;
+
     .contact{
+      cursor: pointer;
       // background-color: red;
       padding: 0.5rem;
       border: 0.1rem solid $clAlterno;
       color: $clAlterno;
       font-size: 1rem;
+
       a{
         list-style: none;
         text-decoration: none;
+
       }
     }
 
@@ -326,7 +330,7 @@ body{
 
   }
   &-Head{
-    // background-color: plum;
+    // background-color: rgb(160, 221, 188);
     margin: 1.5vw;
     color: $resalte;
 
