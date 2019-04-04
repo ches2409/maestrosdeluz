@@ -8893,7 +8893,7 @@ body {
 .mainContainer-Service {
   background-color: yellowgreen; }
   .mainContainer-Service.sectionOne {
-    background-image: url("/src/images/img01_320.png");
+    background-image: url("./images/img01_320.png");
     background-repeat: no-repeat;
     background-size: 100%; }
     .mainContainer-Service.sectionOne .mainContainer-Service_banner__icon {
@@ -8915,7 +8915,7 @@ body {
     .mainContainer-Service.sectionOne .mainContainer-Service_banner__body .textoBody {
       color: #efefef; }
   .mainContainer-Service.sectionTwo {
-    background-image: url("/src/images/img02_320.png");
+    background-image: url("./images/img02_320.png");
     background-repeat: no-repeat;
     background-size: 100%; }
     .mainContainer-Service.sectionTwo .mainContainer-Service_banner__icon {
@@ -8944,7 +8944,7 @@ body {
       color: aliceblue;
       font-size: 0.9rem; }
   .mainContainer-Service.sectionThree {
-    background-image: url("/src/images/img03_320.png");
+    background-image: url("./images/img03_320.png");
     background-repeat: no-repeat;
     background-size: 100%; }
     .mainContainer-Service.sectionThree .mainContainer-Service_banner__icon {
@@ -8975,7 +8975,7 @@ body {
   font-size: 1rem; }
 
 .containerServices {
-  background-image: url("/src/images/fondoUs.jpg");
+  background-image: url("./images/fondoUs.jpg");
   background-position: center; }
   .containerServices_box {
     background-color: rgba(44, 43, 43, 0.7); }
@@ -9037,11 +9037,11 @@ body {
     .mainContainer-contact .box-text p {
       font-size: 1.2rem; }
   .mainContainer-Service.sectionOne {
-    background-image: url("/src/images/img01_600.png"); }
+    background-image: url("./images/img01_600.png"); }
   .mainContainer-Service.sectionTwo {
-    background-image: url("/src/images/img02_600.png"); }
+    background-image: url("./images/img02_600.png"); }
   .mainContainer-Service.sectionThree {
-    background-image: url("/src/images/img03_600.png"); }
+    background-image: url("./images/img03_600.png"); }
     .mainContainer-Service.sectionThree .mainContainer-Service_banner__icon {
       font-size: 3rem; }
     .mainContainer-Service.sectionThree .mainContainer-Service_banner__title {
@@ -9077,17 +9077,17 @@ body {
 
 @media screen and (min-width: 920px) {
   .mainContainer-Service.sectionOne {
-    background-image: url("/src/images/img01.png");
+    background-image: url("./images/img01.png");
     background-size: cover; }
     .mainContainer-Service.sectionOne .mainContainer-Service_banner {
       height: 50vh; }
   .mainContainer-Service.sectionTwo {
-    background-image: url("/src/images/img02.png");
+    background-image: url("./images/img02.png");
     background-size: cover; }
     .mainContainer-Service.sectionTwo .mainContainer-Service_banner {
       height: 50vh; }
   .mainContainer-Service.sectionThree {
-    background-image: url("/src/images/img03.png");
+    background-image: url("./images/img03.png");
     background-size: cover;
     background-position: right; }
     .mainContainer-Service.sectionThree .mainContainer-Service_banner {
